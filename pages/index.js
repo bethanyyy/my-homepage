@@ -50,7 +50,7 @@ export default function Home() {
           animate={{ opacity: 1, x: 0, transition: { delay: 0.3 } }}
         >
           <Heading>
-            Hi! I'm{" "}
+            Hi! I&apos;m{" "}
             <EmphasizedText fontSize="heading1" color="#f288cd">
               Bethany Yao
             </EmphasizedText>

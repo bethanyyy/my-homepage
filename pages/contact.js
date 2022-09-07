@@ -36,7 +36,7 @@ const Contact = () => {
       </Form>
       <div>
         <h2>
-          <EmphasizedText>Let's Connect!</EmphasizedText>
+          <EmphasizedText>Let&apos;s Connect!</EmphasizedText>
         </h2>
         <p>
           If you have an idea that you want to share, or found something here
