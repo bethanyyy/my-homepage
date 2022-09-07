@@ -1,0 +1,21 @@
+import styled from "styled-components";
+
+export const Card = styled.div`
+  border-radius: 8px;
+  border: 4px solid;
+  border-image: url("/BorderImage.svg") 9%;
+  background-color: #fdc388;
+  overflow: hidden;
+  cursor: pointer;
+`;
+
+export const ThumbnailWrapper = styled.div`
+  position: relative;
+  width: 100%;
+  height: 130px;
+  /* transition: all 100ms ease-in-out;
+
+  :hover {
+    transform: scale(1.2);
+  } */
+`;

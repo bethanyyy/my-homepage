@@ -1,9 +1,32 @@
+@font-face {
+  font-family: "Bitbybit";
+  src: url('../fonts/Bitbybit.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NTBrickSans";
+  src: url('../fonts/NTBrickSans.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Bitbybit','NTBrickSans', BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* background-color: #add3ff; */
+  background-color: #236e6f;
+  /* background-color: #f8d1aa; */
+}
+
+div#__next {
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 a {
@@ -13,6 +36,15 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1, h2 {
+  font-family: 'NTBrickSans';
+  margin-top: 0;
+}
+
+button {
+  font-family: 'Bitbybit';
 }
 
 @media (prefers-color-scheme: dark) {
