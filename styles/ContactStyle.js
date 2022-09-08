@@ -26,8 +26,9 @@ export const Form = styled.form`
   border-color: #ffe0a1;
   border-radius: 3px; */
 
+  background-color: #ffecc4;
   border: 1rem solid;
-  border-image: url("/ButtonTest1.svg") 30%;
+  border-image: url("/ContactFormBg.svg") 30%;
   border-radius: 1rem;
 
   p,
@@ -62,7 +63,7 @@ export const Form = styled.form`
     padding: 0;
     border: none;
 
-    background-color: ${({ theme }) => theme.colors.mainBg};
+    background-color: #ffecc4;
     background-image: url("/SubmitButton_Dark2.svg");
     background-repeat: no-repeat;
     background-position: bottom;

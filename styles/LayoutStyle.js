@@ -1,8 +1,29 @@
 import styled from "styled-components";
 
 export const LayoutContainer = styled.div`
-  margin: 0 auto;
+  position: relative;
+  max-width: 1280px;
+  width: 100%;
+  min-height: 100%;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const Header = styled.div`
+  position: absolute;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  height: 90px;
+
+  div {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+  }
 `;
 
 export const LayoutBackground = styled.div`
@@ -56,14 +77,17 @@ export const NavItemSelected = styled(NavItemStyle)`
   opacity: 1;
 `;
 
+export const NavItemContainer = styled.div`
+  position: relative;
+`;
+
 export const NavItemTitle = styled.div`
   position: absolute;
-  top: -10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: ${({ theme }) => theme.colors.mainBg};
-  transform: translateX((-0.7rem));
+  width: 5rem;
+  top: 25%;
+  left: -6.2rem;
+  color: white;
+  text-align: end;
 `;
 
 export const Main = styled.main`

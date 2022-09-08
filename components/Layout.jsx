@@ -6,6 +6,7 @@ import {
   Main,
   Footer,
   LayoutContainer,
+  Header,
 } from "../styles/LayoutStyle";
 import NavItem from "./NavItem";
 import NavItemMe from "../public/NavItem_Me.svg";
@@ -20,19 +21,22 @@ const Layout = ({ children }) => {
   const currentRoute = router.pathname;
   return (
     <LayoutContainer>
+      <Header>
+        <div>a.bebe</div>
+      </Header>
       <LayoutBackground>
         <NavItemWrapper>
-          <NavItem target={"/"}>
+          <NavItem target={"/"} title={"me"}>
             {currentRoute === "/" ? <NavItemMeActive /> : <NavItemMe />}
           </NavItem>
-          <NavItem target={"/work"}>
+          <NavItem target={"/work"} title={"work"}>
             {currentRoute.startsWith("/work") ? (
               <NavItemWorkActive />
             ) : (
               <NavItemWork />
             )}
           </NavItem>
-          <NavItem target={"/contact"}>
+          <NavItem target={"/contact"} title={"contact"}>
             {currentRoute === "/contact" ? (
               <NavItemConnectActive />
             ) : (
