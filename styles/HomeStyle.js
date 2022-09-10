@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 
 export const HomeWrapper = styled(motion.div)`
   display: flex;
-  flex-direction: column;
 `;
 
 export const InfoWrapper = styled.div`
   display: flex;
   align-items: center;
-  padding: 2.2rem 2.3rem;
+  justify-content: center;
+  padding: 2.2rem 2.2rem;
 `;
 
 export const IntroductionSection = styled(motion.div)`
@@ -23,6 +23,9 @@ export const ThumbnailSection = styled.div`
 export const Heading = styled.p`
   font-family: "NTBrickSans";
   margin-bottom: 2rem;
+  /* background-color: white; */
+  /* border: 1rem solid; */
+  border-radius: 1rem;
 
   a {
     position: relative;

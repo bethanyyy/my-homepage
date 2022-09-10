@@ -1,5 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
+import Image from "next/image";
 import {
   LayoutBackground,
   NavItemWrapper,
@@ -7,6 +9,9 @@ import {
   Footer,
   LayoutContainer,
   Header,
+  BackgroundProp,
+  GrassStyle,
+  GrassStyle02,
 } from "../styles/LayoutStyle";
 import NavItem from "./NavItem";
 import NavItemMe from "../public/NavItem_Me.svg";
@@ -16,13 +21,22 @@ import NavItemConnectActive from "../public/NavItem_Connect_Active.svg";
 import NavItemWork from "../public/NavItem_Work.svg";
 import NavItemWorkActive from "../public/NavItem_Work_Active.svg";
 
+import Logo from "../public/Logo.svg";
+import GrassProp from "../public/BgPropGrass.svg";
+import GrassProp02 from "../public/BgPropGrass02.svg";
+
 const Layout = ({ children }) => {
   const router = useRouter();
   const currentRoute = router.pathname;
   return (
     <LayoutContainer>
       <Header>
-        <div>a.bebe</div>
+        <Link href={"/"}>
+          <a>
+            {/* <Logo /> */}
+            <Image src={"/Logo_Anim.gif"} layout="fill" objectFit="contain" />
+          </a>
+        </Link>
       </Header>
       <LayoutBackground>
         <NavItemWrapper>
@@ -46,6 +60,15 @@ const Layout = ({ children }) => {
         </NavItemWrapper>
         <Main>{children}</Main>
       </LayoutBackground>
+      <BackgroundProp>
+        <GrassStyle>
+          <GrassProp />
+        </GrassStyle>
+        <GrassStyle02>
+          <GrassProp02 />
+        </GrassStyle02>
+        {/* <div></div> */}
+      </BackgroundProp>
       <Footer>By Bethany Yao 2022</Footer>
     </LayoutContainer>
   );

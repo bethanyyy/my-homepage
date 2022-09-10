@@ -1,16 +1,15 @@
 import React from "react";
-import { motion } from "framer-motion";
 import WorkCard from "../../components/WorkCard";
 
 import { EmphasizedText } from "../../styles/SharedStyle";
-import { WorkGrid } from "../../styles/WorkStyle";
+import { WorkContainer, WorkGrid } from "../../styles/WorkStyle";
 
 import { workDetails } from "../../lib/work_data";
 import { pageTransition } from "../../lib/animation";
 
 const Work = () => {
   return (
-    <motion.div
+    <WorkContainer
       variants={pageTransition}
       initial="initial"
       animate="animate"
@@ -24,7 +23,7 @@ const Work = () => {
           return <WorkCard key={i} workDetails={work} />;
         })}
       </WorkGrid>
-    </motion.div>
+    </WorkContainer>
   );
 };
 

@@ -29,7 +29,6 @@ const Contact = () => {
         </p>
         <p>
           <button type="submit">
-            {/* <SubmitButton /> */}
             <span>Submit</span>
           </button>
         </p>

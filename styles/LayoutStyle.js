@@ -5,11 +5,16 @@ export const LayoutContainer = styled.div`
   max-width: 1280px;
   width: 100%;
   min-height: 100%;
-  z-index: 1;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 1;
+
+  @media only screen and (min-width: 1536px) {
+    max-width: 1536px;
+  }
 `;
 
 export const Header = styled.div`
@@ -17,12 +22,16 @@ export const Header = styled.div`
   top: 0;
   background-color: white;
   width: 100%;
-  height: 90px;
+  height: 100px;
 
-  div {
+  a {
     position: absolute;
-    top: 40px;
+    top: 30px;
     left: 50px;
+    width: 80px;
+    height: 50px;
+    /* padding: 30px 0 0 20px; */
+    color: white;
   }
 `;
 
@@ -31,18 +40,19 @@ export const LayoutBackground = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 60rem;
-  height: 30rem;
-  border: 1rem solid;
-  border-image: url("/ButtonTest1.svg") 30%;
-  border-radius: 1rem;
-  background-color: ${({ theme }) => theme.colors.mainBg};
+  /* width: 60rem; */
+  width: 75%;
+  aspect-ratio: 2/1;
+  border: 1.1rem solid;
+  border-image: url("/MainBgBorder.svg") 24%;
+  border-radius: 2rem;
+  background-color: #ffe0a1;
 `;
 
 export const NavItemWrapper = styled.ul`
   position: absolute;
   top: 3rem;
-  left: -3rem;
+  left: -3.2rem;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -92,13 +102,45 @@ export const NavItemTitle = styled.div`
 
 export const Main = styled.main`
   padding: 1.8rem 1.7rem;
+  height: 100%;
+  display: flex;
+  background-color: ${({ theme }) => theme.colors.mainBg};
+  border-radius: 1rem;
+  /* margin: -3px; */
   z-index: 0;
   overflow: hidden;
+`;
+
+export const BackgroundProp = styled.div`
+  position: fixed;
+  bottom: 0rem;
+  right: 0rem;
+  width: 100%;
+  height: 1rem;
+  padding: 0;
+  /* background-color: #5dbe83; */
+`;
+
+export const GrassStyle = styled.div`
+  position: absolute;
+  bottom: 0rem;
+  right: 1rem;
+  width: 7rem;
+  margin: 0;
+
+  svg {
+    display: block;
+  }
+`;
+
+export const GrassStyle02 = styled(GrassStyle)`
+  right: 15rem;
+  width: 5rem;
 `;
 
 export const Footer = styled.footer`
   text-align: center;
   font-size: 0.6rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: ${({ theme }) => theme.colors.mainBg};
   margin-top: 1rem;
 `;

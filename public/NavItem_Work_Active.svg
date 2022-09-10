@@ -3,73 +3,70 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 24.24 23.27" style="enable-background:new 0 0 24.24 23.27;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#CED9D7;}
+	.st0{fill:#90BA5F;}
 	.st1{fill:#D4E0A2;}
-	.st2{fill:#90BA5F;}
-	.st3{fill:#E0DD76;}
+	.st2{fill:#F7F8D9;}
+	.st3{fill:#CED9D7;}
 	.st4{fill:#F1F5D3;}
 	.st5{fill:#E2C695;}
-	.st6{fill:#C6813B;}
+	.st6{fill:#E48BBA;}
 </style>
 <g>
-	<rect x="19.39" y="11.64" class="st0" width="0.97" height="0.96"/>
-	<rect x="18.42" y="11.64" class="st1" width="0.97" height="0.96"/>
-	<rect x="18.42" y="9.7" class="st1" width="0.97" height="0.97"/>
-	<rect x="18.42" y="7.76" class="st1" width="0.97" height="0.97"/>
-	<rect x="17.45" y="11.64" class="st0" width="0.97" height="0.96"/>
-	<rect x="17.45" y="9.7" class="st1" width="0.97" height="0.97"/>
-	<rect x="16.48" y="18.42" class="st0" width="0.97" height="0.97"/>
-	<rect x="16.48" y="17.45" class="st0" width="0.97" height="0.97"/>
-	<rect x="16.48" y="11.64" class="st1" width="0.97" height="0.96"/>
-	<rect x="16.48" y="7.76" class="st1" width="0.97" height="0.97"/>
-	<rect x="15.51" y="11.64" class="st1" width="0.97" height="0.96"/>
-	<rect x="15.51" y="9.7" class="st1" width="0.97" height="0.97"/>
-	<rect x="14.54" y="11.64" class="st0" width="0.97" height="0.96"/>
-	<rect x="14.54" y="7.76" class="st1" width="0.97" height="0.97"/>
-	<rect x="13.57" y="11.64" class="st1" width="0.97" height="0.96"/>
-	<rect x="13.57" y="9.7" class="st1" width="0.97" height="0.97"/>
-	<rect x="12.6" y="11.64" class="st1" width="0.97" height="0.96"/>
-	<rect x="12.6" y="7.76" class="st1" width="0.97" height="0.97"/>
-	<rect x="11.64" y="11.64" class="st1" width="0.96" height="0.96"/>
-	<rect x="11.64" y="9.7" class="st1" width="0.96" height="0.97"/>
-	<rect x="10.67" y="11.64" class="st1" width="0.97" height="0.96"/>
-	<rect x="10.67" y="7.76" class="st1" width="0.97" height="0.97"/>
-	<rect x="9.7" y="11.64" class="st1" width="0.97" height="0.96"/>
-	<rect x="9.7" y="9.7" class="st1" width="0.97" height="0.97"/>
-	<rect x="8.73" y="11.64" class="st1" width="0.97" height="0.96"/>
-	<rect x="8.73" y="7.76" class="st1" width="0.97" height="0.97"/>
-	<rect x="7.76" y="11.64" class="st0" width="0.97" height="0.96"/>
-	<rect x="7.76" y="9.7" class="st1" width="0.97" height="0.97"/>
-	<rect x="6.79" y="11.64" class="st1" width="0.97" height="0.96"/>
-	<rect x="6.79" y="7.76" class="st1" width="0.97" height="0.97"/>
-	<rect x="5.82" y="11.64" class="st0" width="0.97" height="0.96"/>
-	<rect x="5.82" y="9.7" class="st1" width="0.97" height="0.97"/>
-	<rect x="4.85" y="11.64" class="st1" width="0.97" height="0.96"/>
 	<g>
-		<rect x="18.42" y="10.67" class="st2" width="0.97" height="0.97"/>
-		<rect x="18.42" y="6.79" class="st2" width="0.97" height="0.97"/>
-		<polygon class="st2" points="17.45,8.73 17.45,9.7 18.42,9.7 19.39,9.7 19.39,8.73 18.42,8.73 		"/>
-		<rect x="16.48" y="6.79" class="st2" width="0.97" height="0.97"/>
-		<polygon class="st2" points="15.51,10.67 15.51,11.64 16.48,11.64 17.45,11.64 17.45,10.67 16.48,10.67 		"/>
-		<rect x="15.51" y="8.73" class="st2" width="0.97" height="0.97"/>
-		<rect x="14.54" y="6.79" class="st2" width="0.97" height="0.97"/>
-		<rect x="13.57" y="8.73" class="st2" width="0.97" height="0.97"/>
-		<polygon class="st2" points="12.6,10.67 11.64,10.67 10.67,10.67 9.7,10.67 8.73,10.67 8.73,11.64 9.7,11.64 10.67,11.64 
+		<rect x="18.42" y="10.67" class="st0" width="0.97" height="0.97"/>
+		<rect x="18.42" y="6.79" class="st0" width="0.97" height="0.97"/>
+		<polygon class="st0" points="17.45,8.73 17.45,9.7 18.42,9.7 19.39,9.7 19.39,8.73 18.42,8.73 		"/>
+		<rect x="16.48" y="6.79" class="st0" width="0.97" height="0.97"/>
+		<polygon class="st0" points="15.51,10.67 15.51,11.64 16.48,11.64 17.45,11.64 17.45,10.67 16.48,10.67 		"/>
+		<rect x="15.51" y="8.73" class="st0" width="0.97" height="0.97"/>
+		<rect x="14.54" y="6.79" class="st0" width="0.97" height="0.97"/>
+		<rect x="13.57" y="8.73" class="st0" width="0.97" height="0.97"/>
+		<polygon class="st0" points="12.6,10.67 11.64,10.67 10.67,10.67 9.7,10.67 8.73,10.67 8.73,11.64 9.7,11.64 10.67,11.64 
 			11.64,11.64 12.6,11.64 13.57,11.64 14.54,11.64 14.54,10.67 13.57,10.67 		"/>
-		<rect x="12.6" y="6.79" class="st2" width="0.97" height="0.97"/>
-		<rect x="11.64" y="8.73" class="st2" width="0.96" height="0.97"/>
-		<rect x="10.67" y="6.79" class="st2" width="0.97" height="0.97"/>
-		<rect x="9.7" y="8.73" class="st2" width="0.97" height="0.97"/>
-		<rect x="8.73" y="6.79" class="st2" width="0.97" height="0.97"/>
-		<rect x="7.76" y="8.73" class="st2" width="0.97" height="0.97"/>
-		<rect x="6.79" y="10.67" class="st2" width="0.97" height="0.97"/>
-		<rect x="6.79" y="6.79" class="st2" width="0.97" height="0.97"/>
-		<polygon class="st2" points="6.79,8.73 5.82,8.73 4.85,8.73 4.85,9.7 5.82,9.7 6.79,9.7 		"/>
-		<rect x="4.85" y="10.67" class="st2" width="0.97" height="0.97"/>
+		<rect x="12.6" y="6.79" class="st0" width="0.97" height="0.97"/>
+		<rect x="11.64" y="8.73" class="st0" width="0.96" height="0.97"/>
+		<rect x="10.67" y="6.79" class="st0" width="0.97" height="0.97"/>
+		<rect x="9.7" y="8.73" class="st0" width="0.97" height="0.97"/>
+		<rect x="8.73" y="6.79" class="st0" width="0.97" height="0.97"/>
+		<rect x="7.76" y="8.73" class="st0" width="0.97" height="0.97"/>
+		<rect x="6.79" y="10.67" class="st0" width="0.97" height="0.97"/>
+		<rect x="6.79" y="6.79" class="st0" width="0.97" height="0.97"/>
+		<polygon class="st0" points="6.79,8.73 5.82,8.73 4.85,8.73 4.85,9.7 5.82,9.7 6.79,9.7 		"/>
+		<rect x="4.85" y="10.67" class="st0" width="0.97" height="0.97"/>
 	</g>
-	<rect x="4.85" y="7.76" class="st1" width="0.97" height="0.97"/>
-	<rect x="4.85" y="6.79" class="st3" width="0.97" height="0.97"/>
-	<rect x="3.88" y="11.64" class="st0" width="0.97" height="0.96"/>
+	<g>
+		<rect x="18.42" y="11.64" class="st1" width="0.97" height="0.96"/>
+		<rect x="18.42" y="7.76" class="st1" width="0.97" height="0.97"/>
+		<polygon class="st1" points="17.45,9.7 17.45,10.67 18.42,10.67 19.39,10.67 19.39,9.7 18.42,9.7 		"/>
+		<rect x="16.48" y="7.76" class="st1" width="0.97" height="0.97"/>
+		<polygon class="st1" points="15.51,11.64 15.51,12.6 16.48,12.6 17.45,12.6 17.45,11.64 16.48,11.64 		"/>
+		<rect x="15.51" y="9.7" class="st1" width="0.97" height="0.97"/>
+		<rect x="14.54" y="7.76" class="st1" width="0.97" height="0.97"/>
+		<rect x="13.57" y="9.7" class="st1" width="0.97" height="0.97"/>
+		<polygon class="st1" points="12.6,11.64 11.64,11.64 10.67,11.64 9.7,11.64 8.73,11.64 8.73,12.6 9.7,12.6 10.67,12.6 11.64,12.6 
+			12.6,12.6 13.57,12.6 14.54,12.6 14.54,11.64 13.57,11.64 		"/>
+		<rect x="12.6" y="7.76" class="st1" width="0.97" height="0.97"/>
+		<rect x="11.64" y="9.7" class="st1" width="0.96" height="0.97"/>
+		<rect x="10.67" y="7.76" class="st1" width="0.97" height="0.97"/>
+		<rect x="9.7" y="9.7" class="st1" width="0.97" height="0.97"/>
+		<rect x="8.73" y="7.76" class="st1" width="0.97" height="0.97"/>
+		<rect x="7.76" y="9.7" class="st1" width="0.97" height="0.97"/>
+		<rect x="6.79" y="11.64" class="st1" width="0.97" height="0.96"/>
+		<rect x="6.79" y="7.76" class="st1" width="0.97" height="0.97"/>
+		<rect x="5.82" y="9.7" class="st1" width="0.97" height="0.97"/>
+		<rect x="4.85" y="11.64" class="st1" width="0.97" height="0.96"/>
+		<rect x="4.85" y="7.76" class="st1" width="0.97" height="0.97"/>
+	</g>
+	<rect x="4.85" y="6.79" class="st2" width="0.97" height="0.97"/>
+	<g>
+		<rect x="19.39" y="11.64" class="st3" width="0.97" height="0.96"/>
+		<rect x="17.45" y="11.64" class="st3" width="0.97" height="0.96"/>
+		<polygon class="st3" points="16.48,18.42 16.48,19.39 17.45,19.39 17.45,18.42 17.45,17.45 16.48,17.45 		"/>
+		<rect x="14.54" y="11.64" class="st3" width="0.97" height="0.96"/>
+		<rect x="7.76" y="11.64" class="st3" width="0.97" height="0.96"/>
+		<rect x="5.82" y="11.64" class="st3" width="0.97" height="0.96"/>
+		<rect x="3.88" y="11.64" class="st3" width="0.97" height="0.96"/>
+	</g>
 	<g>
 		<polygon class="st4" points="19.39,5.82 18.42,5.82 17.45,5.82 16.48,5.82 15.51,5.82 14.54,5.82 13.57,5.82 12.6,5.82 
 			11.64,5.82 10.67,5.82 9.7,5.82 8.73,5.82 7.76,5.82 6.79,5.82 5.82,5.82 4.85,5.82 3.88,5.82 3.88,6.79 3.88,7.76 3.88,8.73 

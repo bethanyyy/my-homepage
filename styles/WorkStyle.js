@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
+
+export const WorkContainer = styled(motion.div)`
+  width: 100%;
+`;
 
 export const WorkGrid = styled.div`
   display: grid;
