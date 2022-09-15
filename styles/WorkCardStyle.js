@@ -4,7 +4,7 @@ export const Card = styled.div`
   border-radius: 8px;
   border: 4px solid;
   border-image: url("/BorderImage.svg") 9%;
-  background-color: #fdc388;
+  background-color: var(--clr-secondary);
   overflow: hidden;
   cursor: pointer;
 `;

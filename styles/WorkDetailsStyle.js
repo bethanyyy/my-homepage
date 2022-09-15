@@ -13,13 +13,12 @@ export const BackButtonContainer = styled.div`
 `;
 
 export const BackButtonStyle = styled.div`
-  width: 2rem;
-  aspect-ratio: 1/1;
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: aliceblue; */
+  width: 2rem;
+  aspect-ratio: 1/1;
+  cursor: pointer;
 
   :hover {
     animation: bounce 0.7s steps(1, start) infinite;
@@ -40,24 +39,27 @@ export const BackButtonShadow = styled.div`
   bottom: -1px;
   width: 2rem;
   height: 10px;
-  background-color: rgb(253, 195, 136);
-  opacity: 0.5;
+  background-color: var(--clr-secondary);
   border-radius: 50%;
+  opacity: 0.5;
   z-index: -1;
 `;
 
 export const MainSection = styled.div`
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: var(--size-400);
+  > * {
+    flex-basis: 50%;
+  }
 `;
 
 export const LeftSection = styled.div`
-  flex-basis: 50%;
+  /* flex-basis: 50%; */
 `;
 
 export const RightSection = styled.div`
-  flex-basis: 50%;
+  /* flex-basis: 50%; */
 `;
 
 export const Thumbnail = styled.div`
@@ -67,15 +69,15 @@ export const Thumbnail = styled.div`
   border-radius: 8px;
   border: 4px solid;
   border-image: url("/BorderImage.svg") 9%;
-  background-color: #fdc388;
+  background-color: var(--clr-secondary);
 `;
 
 export const Description = styled.div`
   padding: 3px;
-  margin-bottom: 2rem;
-  background-color: ${({ theme }) => theme.colors.mainBg};
-  box-shadow: 5px 6px 0px #fdc388;
+  margin-bottom: var(--size-700);
+  background-color: var(--clr-neutral-100);
+  box-shadow: 5px 6px 0px var(--clr-secondary);
   border: solid 4px;
-  border-color: #ffe0a1;
+  border-color: var(--clr-neutral-400);
   border-radius: 3px;
 `;

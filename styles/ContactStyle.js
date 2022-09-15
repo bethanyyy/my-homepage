@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 export const ContactContainer = styled(motion.div)`
   display: flex;
   align-items: center;
-  gap: 3rem;
-  padding: 0.5rem 0.8rem;
+  gap: var(--size-800);
+  padding-inline: var(--size-300);
   > * {
     flex-basis: 50%;
   }
@@ -17,7 +17,8 @@ export const Form = styled.form`
   align-items: center;
   justify-content: flex-start;
   height: 23rem;
-  padding-top: 10px;
+  /* padding-top: 10px; */
+  padding-top: var(--size-300);
   overflow-y: auto;
 
   /* background-color: ${({ theme }) => theme.colors.mainBg};
@@ -26,7 +27,7 @@ export const Form = styled.form`
   border-color: #ffe0a1;
   border-radius: 3px; */
 
-  background-color: #ffecc4;
+  background-color: var(--clr-neutral-300);
   border: 1rem solid;
   border-image: url("/ContactFormBg.svg") 30%;
   border-radius: 1rem;
@@ -39,7 +40,8 @@ export const Form = styled.form`
   }
 
   p {
-    margin-bottom: 13px;
+    /* margin-bottom: 13px; */
+    margin-block: var(--size-300);
   }
 
   label {
@@ -48,10 +50,10 @@ export const Form = styled.form`
 
   input,
   textarea {
-    background-color: ${({ theme }) => theme.colors.mainBg};
-    box-shadow: 5px 6px 0px #fdc388;
+    background-color: var(--clr-neutral-100);
+    box-shadow: 5px 6px 0px var(--clr-secondary);
     border: solid 4px;
-    border-color: #ffe0a1;
+    border-color: var(--clr-neutral-400);
     border-radius: 3px;
   }
 
@@ -63,12 +65,12 @@ export const Form = styled.form`
     padding: 0;
     border: none;
 
-    background-color: #ffecc4;
+    background-color: var(--clr-neutral-300);
     background-image: url("/SubmitButton_Dark2.svg");
     background-repeat: no-repeat;
     background-position: bottom;
 
-    color: ${({ theme }) => theme.colors.mainBg};
+    color: var(--clr-neutral-100);
     text-transform: uppercase;
 
     cursor: pointer;

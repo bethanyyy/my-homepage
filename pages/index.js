@@ -6,7 +6,6 @@ import { OrbitControls, Center } from "@react-three/drei";
 import BunnyModel from "../components/BunnyModel";
 import {
   HomeWrapper,
-  InfoWrapper,
   ThumbnailSection,
   Heading,
   IntroductionSection,
@@ -28,47 +27,45 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <InfoWrapper>
-        <ThumbnailSection>
-          <Canvas orthographic camera={{ zoom: 50, position: [-5, 2, 5] }}>
-            <ambientLight intensity={0.8} />
-            <Center>
-              <OrbitControls
-                makeDefault
-                target={[0, 0, 0]}
-                enableZoom={false}
-                enablePan={false}
-              />
-              <Suspense fallback={null}>
-                <BunnyModel />
-              </Suspense>
-            </Center>
-          </Canvas>
-        </ThumbnailSection>
-        <IntroductionSection
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0, transition: { delay: 0.3 } }}
-        >
-          <Heading>
-            Hi! I&apos;m{" "}
-            <EmphasizedText fontSize="heading1" color="#f288cd">
-              Bethany Yao
-            </EmphasizedText>
-            , I make{" "}
-            <EmphasizedText fontSize="heading2" color="normal">
-              websites
-            </EmphasizedText>
-            , and <a href="https://bebeeee.itch.io/">games</a> sometimes
-          </Heading>
+      <ThumbnailSection>
+        <Canvas orthographic camera={{ zoom: 50, position: [-5, 2, 5] }}>
+          <ambientLight intensity={0.8} />
+          <Center>
+            <OrbitControls
+              makeDefault
+              target={[0, 0, 0]}
+              enableZoom={false}
+              enablePan={false}
+            />
+            <Suspense fallback={null}>
+              <BunnyModel />
+            </Suspense>
+          </Center>
+        </Canvas>
+      </ThumbnailSection>
+      <IntroductionSection
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0, transition: { delay: 0.3 } }}
+      >
+        <Heading>
+          Hi! I&apos;m{" "}
+          <EmphasizedText fontSize="heading1" color="#f288cd">
+            Bethany Yao
+          </EmphasizedText>
+          , I make{" "}
+          <EmphasizedText fontSize="heading2" color="normal">
+            websites
+          </EmphasizedText>
+          , and <a href="https://bebeeee.itch.io/">games</a> sometimes
+        </Heading>
 
-          <p className="">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus,
-            voluptatibus in. Enim quisquam dignissimos perferendis non,
-            expedita, quam dolor explicabo sequi nihil commodi assumenda autem
-            atque pariatur, porro reprehenderit possimus?
-          </p>
-        </IntroductionSection>
-      </InfoWrapper>
+        <p className="">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus,
+          voluptatibus in. Enim quisquam dignissimos perferendis non, expedita,
+          quam dolor explicabo sequi nihil commodi assumenda autem atque
+          pariatur, porro reprehenderit possimus?
+        </p>
+      </IntroductionSection>
     </HomeWrapper>
   );
 }

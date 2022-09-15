@@ -2,18 +2,18 @@ import styled from "styled-components";
 
 export const LayoutContainer = styled.div`
   position: relative;
-  max-width: 1280px;
-  width: 100%;
-  min-height: 100%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: var(--max-width-lg);
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100%;
   z-index: 1;
 
   @media only screen and (min-width: 1536px) {
-    max-width: 1536px;
+    max-width: var(--max-width-lg);
   }
 `;
 
@@ -46,7 +46,7 @@ export const LayoutBackground = styled.div`
   border: 1.1rem solid;
   border-image: url("/MainBgBorder.svg") 24%;
   border-radius: 2rem;
-  background-color: #ffe0a1;
+  background-color: var(--clr-neutral-400);
 `;
 
 export const NavItemWrapper = styled.ul`
@@ -93,21 +93,19 @@ export const NavItemContainer = styled.div`
 
 export const NavItemTitle = styled.div`
   position: absolute;
-  width: 5rem;
   top: 25%;
   left: -6.2rem;
+  width: 5rem;
   color: white;
   text-align: end;
 `;
 
 export const Main = styled.main`
-  padding: 1.8rem 1.7rem;
-  height: 100%;
   display: flex;
-  background-color: ${({ theme }) => theme.colors.mainBg};
+  padding: var(--size-700) var(--size-600);
+  height: 100%;
+  background-color: var(--clr-neutral-100);
   border-radius: 1rem;
-  /* margin: -3px; */
-  z-index: 0;
   overflow: hidden;
 `;
 
@@ -117,8 +115,6 @@ export const BackgroundProp = styled.div`
   right: 0rem;
   width: 100%;
   height: 1rem;
-  padding: 0;
-  /* background-color: #5dbe83; */
 `;
 
 export const GrassStyle = styled.div`
@@ -126,11 +122,6 @@ export const GrassStyle = styled.div`
   bottom: 0rem;
   right: 1rem;
   width: 7rem;
-  margin: 0;
-
-  svg {
-    display: block;
-  }
 `;
 
 export const GrassStyle02 = styled(GrassStyle)`
@@ -140,7 +131,7 @@ export const GrassStyle02 = styled(GrassStyle)`
 
 export const Footer = styled.footer`
   text-align: center;
-  font-size: 0.6rem;
-  color: ${({ theme }) => theme.colors.mainBg};
-  margin-top: 1rem;
+  font-size: var(--fs-100);
+  color: var(--clr-neutral-100);
+  margin-top: var(--size-400);
 `;

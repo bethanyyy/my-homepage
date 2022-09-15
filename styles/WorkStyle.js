@@ -8,5 +8,6 @@ export const WorkContainer = styled(motion.div)`
 export const WorkGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  /* gap: 10px; */
+  gap: var(--size-300);
 `;
