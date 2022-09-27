@@ -18,4 +18,8 @@ export const ThumbnailWrapper = styled.div`
   :hover {
     transform: scale(1.2);
   } */
+
+  @media only screen and (min-width: 1536px) {
+    height: 160px;
+  }
 `;

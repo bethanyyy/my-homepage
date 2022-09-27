@@ -12,6 +12,7 @@ import {
   MainSection,
   BackButtonShadow,
   BackButtonContainer,
+  DescriptionDetails,
 } from "../../styles/WorkDetailsStyle";
 import { EmphasizedText } from "../../styles/SharedStyle";
 import { workDetailsTransition } from "../../lib/animation";
@@ -51,12 +52,14 @@ const WorkDetails = ({ workData }) => {
         </LeftSection>
         <RightSection>
           <Description>{description}</Description>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
-            harum voluptas explicabo, blanditiis officia possimus ducimus
-            doloremque praesentium fugiat? Numquam.
-          </p>
-          <Link href={"#"}>Live Site</Link>
+          <DescriptionDetails>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
+              harum voluptas explicabo, blanditiis officia possimus ducimus
+              doloremque praesentium fugiat? Numquam.
+            </p>
+            <Link href={"#"}>Live Site</Link>
+          </DescriptionDetails>
         </RightSection>
       </MainSection>
     </WorkDetailsContainer>

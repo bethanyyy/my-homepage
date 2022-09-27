@@ -1,14 +1,11 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-export const WorkDetailsContainer = styled(motion.div)`
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-`;
+export const WorkDetailsContainer = styled(motion.div)``;
 
 export const BackButtonContainer = styled.div`
   position: relative;
+  margin-bottom: var(--size-300);
   z-index: 2;
 `;
 
@@ -47,10 +44,15 @@ export const BackButtonShadow = styled.div`
 
 export const MainSection = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: var(--size-400);
-  > * {
-    flex-basis: 50%;
+
+  @media (min-width: 1190px) {
+    flex-direction: row;
+    > * {
+      flex-basis: 50%;
+    }
   }
 `;
 
@@ -80,4 +82,8 @@ export const Description = styled.div`
   border: solid 4px;
   border-color: var(--clr-neutral-400);
   border-radius: 3px;
+`;
+
+export const DescriptionDetails = styled.div`
+  padding-left: var(--size-300);
 `;

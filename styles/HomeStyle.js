@@ -3,19 +3,41 @@ import { motion } from "framer-motion";
 
 export const HomeWrapper = styled(motion.div)`
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-inline: var(--size-700);
-  gap: var(--size-700);
+
+  /* @media (min-width: 1024px) {
+    flex-basis: 10%;
+  }*/
+
+  @media (min-width: 768px) {
+    padding-inline: var(--size-700);
+    gap: var(--size-700);
+  }
+
+  @media (min-width: 1190px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 1536px) {
+    /* padding-right: var(--size-600); */
+  }
 `;
 
-export const IntroductionSection = styled(motion.div)`
-  /* padding-left: 2rem; */
-`;
 export const ThumbnailSection = styled.div`
-  flex-basis: 30%;
-  height: 16rem;
+  /* width: 40rem; */
+  /* height: 10rem; */
+  /* width: 100%; */
+  height: 10rem;
+
+  @media (min-width: 768px) {
+    flex-basis: 30%;
+    height: 16rem;
+  }
 `;
+
+export const IntroductionSection = styled(motion.div)``;
 
 export const Heading = styled.p`
   font-family: var(--ff-accent);

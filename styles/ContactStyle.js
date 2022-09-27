@@ -3,11 +3,16 @@ import { motion } from "framer-motion";
 
 export const ContactContainer = styled(motion.div)`
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: var(--size-800);
   padding-inline: var(--size-300);
-  > * {
-    flex-basis: 50%;
+
+  @media (min-width: 1190px) {
+    flex-direction: row;
+    > * {
+      flex-basis: 50%;
+    }
   }
 `;
 
@@ -16,6 +21,8 @@ export const Form = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  flex-shrink: 0;
+  width: 100%;
   height: 23rem;
   /* padding-top: 10px; */
   padding-top: var(--size-300);
@@ -31,6 +38,14 @@ export const Form = styled.form`
   border: 1rem solid;
   border-image: url("/ContactFormBg.svg") 30%;
   border-radius: 1rem;
+
+  @media (min-width: 1190px) {
+    flex-shrink: 1;
+  }
+
+  @media (min-width: 1536px) {
+    height: 29rem;
+  }
 
   p,
   label,
@@ -55,6 +70,12 @@ export const Form = styled.form`
     border: solid 4px;
     border-color: var(--clr-neutral-400);
     border-radius: 3px;
+  }
+
+  textarea {
+    @media (min-width: 1536px) {
+      height: 7rem;
+    }
   }
 
   button {

@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const EmphasizedText = styled.span`
   font-size: ${(props) => {
     if (props.fontSize === "heading1") {
-      return props.theme.fontSize.heading1;
+      return "var(--fs-700)";
     } else if (props.fontSize === "heading2") {
-      return props.theme.fontSize.heading2;
+      return "var(--fs-600)";
     }
     return props.fontSize || "inherit";
   }};
