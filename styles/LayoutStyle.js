@@ -172,6 +172,13 @@ export const Main = styled.main`
   background-color: var(--clr-neutral-100);
   border-radius: 1rem;
   overflow: scroll;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 export const BackgroundProp = styled.div`
