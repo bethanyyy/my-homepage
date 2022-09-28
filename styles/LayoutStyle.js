@@ -34,6 +34,7 @@ export const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   @media only screen and (min-width: 1536px) {
     width: 60px;

@@ -30,14 +30,14 @@ const Layout = ({ children }) => {
   const currentRoute = router.pathname;
   return (
     <LayoutContainer>
-      <Header>
-        <Link href={"/"}>
+      <Link href={"/"}>
+        <Header>
           <a>
             {/* <Logo /> */}
             <Image src={"/Logo_Anim.gif"} layout="fill" objectFit="contain" />
           </a>
-        </Link>
-      </Header>
+        </Header>
+      </Link>
       <LayoutBackground>
         <NavItemWrapper>
           <NavItem target={"/"} title={"me"}>

@@ -1,10 +1,19 @@
 import React from "react";
+import {
+  SuccessContainer,
+  Underline,
+  UnderlineSecond,
+} from "../styles/SuccessStyle";
 
 const Success = () => {
   return (
-    <div>
-      <p>Thank you for leaving a messasge!</p>
-    </div>
+    <SuccessContainer>
+      <div>
+        <p>Thank you for leaving a message!</p>
+        <Underline />
+        <UnderlineSecond />
+      </div>
+    </SuccessContainer>
   );
 };
 
