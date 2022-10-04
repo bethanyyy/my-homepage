@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98.026" height="42.026" viewBox="0 0 98.026 42.026">
+  <g id="InsBoard" transform="translate(-202.987 -91.987)">
+    <g id="PixelWoodBoard" transform="translate(-1033.091 -517.013)">
+      <path id="Path_130" data-name="Path 130" d="M89.682,7.906V3.88H7.76V7.906H89.682Z" transform="translate(1236.37 605.12)" fill="#8d5a0e"/>
+      <path id="Path_138" data-name="Path 138" d="M97.734,37.854V3.88H7.76V37.854H97.734Z" transform="translate(1232.344 609.146)" fill="#c6813b"/>
+      <path id="Path_135" data-name="Path 135" d="M89.682,7.906V3.88H7.76V7.906H89.682Z" transform="translate(1236.37 643.12)" fill="#8d5a0e"/>
+      <path id="Path_131" data-name="Path 131" d="M10.816,17.811V4.85H6.79V30.772h4.026Z" transform="translate(1229.288 612.202)" fill="#8d5a0e"/>
+      <path id="Path_133" data-name="Path 133" d="M10.816,17.811V4.85H6.79V30.772h4.026Z" transform="translate(1323.288 612.202)" fill="#8d5a0e"/>
+      <path id="Path_132" data-name="Path 132" d="M10.816,6.863V4.85H6.79V8.876h4.026Z" transform="translate(1233.314 608.176)" fill="#8d5a0e"/>
+      <path id="Path_136" data-name="Path 136" d="M10.816,6.863V4.85H6.79V8.876h4.026Z" transform="translate(1233.314 638.124)" fill="#8d5a0e"/>
+      <path id="Path_134" data-name="Path 134" d="M10.816,6.863V4.85H6.79V8.876h4.026Z" transform="translate(1319.262 608.176)" fill="#8d5a0e"/>
+      <path id="Path_137" data-name="Path 137" d="M10.816,6.863V4.85H6.79V8.876h4.026Z" transform="translate(1319.262 638.124)" fill="#8d5a0e"/>
+    </g>
+    <g id="Icon_feather-instagram" data-name="Icon feather-instagram" transform="translate(217.5 100.089)">
+      <path id="Path_120" data-name="Path 120" d="M7.728,3h9.455a4.728,4.728,0,0,1,4.728,4.728v9.455a4.728,4.728,0,0,1-4.728,4.728H7.728A4.728,4.728,0,0,1,3,17.183V7.728A4.728,4.728,0,0,1,7.728,3Z" fill="#fdeef5" stroke="#e48bba" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_121" data-name="Path 121" d="M19.588,15.162A3.782,3.782,0,1,1,16.4,11.976a3.782,3.782,0,0,1,3.186,3.186Z" transform="translate(-3.351 -3.303)" fill="#fdeef5" stroke="#e48bba" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_122" data-name="Path 122" d="M26.25,9.75h0" transform="translate(-8.594 -2.495)" fill="#fdeef5" stroke="#e48bba" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+    <text id="Insta" transform="translate(244.5 104)" fill="#fdeef5" font-size="16" font-family="BitbybitRegular, Bitbybit"><tspan x="0" y="14">Insta</tspan></text>
+  </g>
+</svg>

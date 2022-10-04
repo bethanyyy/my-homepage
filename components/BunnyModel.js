@@ -11,10 +11,22 @@ export default function Model(props) {
   const { nodes, materials } = useGLTF("/bunny-baked2.glb");
   const { viewport } = useThree();
   const [hover, setHover] = useState(false);
+  const [reset, setReset] = useState(false);
+  var passedTime = 0;
+  var move = false;
 
   useFrame((state, delta) => {
-    const time = state.clock.getElapsedTime();
-    mesh.current.rotation.z -= Math.sin(time * 3) * (hover ? 0.005 : 0);
+    if (hover && !reset) {
+      setReset(true);
+      passedTime = 0;
+    } else if (hover) {
+      passedTime += 0.01;
+    }
+    if (hover && passedTime % (Math.PI / 10) <= 0.01) {
+      move = !move;
+    }
+    mesh.current.rotation.z +=
+      Math.sin(passedTime * 20) * (hover ? 0.005 : 0) * move;
   });
 
   return (
@@ -31,6 +43,8 @@ export default function Model(props) {
         onPointerOver={(e) => setHover(true)}
         onPointerLeave={(e) => {
           setHover(false);
+          setReset(false);
+          move = false;
           mesh.current.rotation.z = 0;
         }}
       />

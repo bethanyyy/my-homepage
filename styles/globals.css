@@ -14,9 +14,11 @@
 
 /* variables */
 :root {
-  --clr-body: #000000;
+  --clr-body: #5c391d;
   --clr-background: #ff967f;
   --clr-accent: #f288cd;
+  --clr-accent-secondary: #89d4ff;
+  --clr-shadow: #d97f6b;
   --clr-neutral-100: #fff6e1;
   --clr-neutral-300: #ffecc4;
   --clr-neutral-400: #ffe0a1;
@@ -27,6 +29,7 @@
   --ff-accent: "NTBrickSans", sans-serif;
 
   --fs-100: 0.6rem;
+  --fs-300: 0.75rem;
   --fs-400: 1rem;
   --fs-500: 1rem;
   --fs-600: 1rem;
@@ -34,6 +37,7 @@
 
   --size-300: 0.75rem;
   --size-400: 1rem;
+  --size-500: 1.3rem;
   --size-600: 1.7rem;
   --size-700: 2rem;
   --size-800: 3rem;

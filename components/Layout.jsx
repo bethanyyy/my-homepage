@@ -12,6 +12,11 @@ import {
   BackgroundProp,
   GrassStyle,
   GrassStyle02,
+  PropStyle,
+  PropBethanyBoard,
+  PropInsBoard,
+  Background,
+  PropTwitterBoard,
 } from "../styles/LayoutStyle";
 import NavItem from "./NavItem";
 import NavItemMe from "../public/NavItem_Me.svg";
@@ -21,9 +26,14 @@ import NavItemConnectActive from "../public/NavItem_Connect_Active.svg";
 import NavItemWork from "../public/NavItem_Work.svg";
 import NavItemWorkActive from "../public/NavItem_Work_Active.svg";
 
+import MainBgShadow from "../public/MainBgShadow.svg";
+
 import Logo from "../public/Logo.svg";
 import GrassProp from "../public/BgPropGrass.svg";
 import GrassProp02 from "../public/BgPropGrass02.svg";
+import CornerProp from "../public/CornerProp.svg";
+import TwitterBoard from "../public/TwitterBoard.svg";
+import InsBoard from "../public/InsBoard.svg";
 
 const Layout = ({ children }) => {
   const router = useRouter();
@@ -33,12 +43,13 @@ const Layout = ({ children }) => {
       <Link href={"/"}>
         <Header>
           <a>
-            {/* <Logo /> */}
-            <Image src={"/Logo_Anim.gif"} layout="fill" objectFit="contain" />
+            {/* <Image src={"/Logo_Anim.gif"} layout="fill" objectFit="contain" /> */}
+            bebemoka.
           </a>
         </Header>
       </Link>
       <LayoutBackground>
+        <Background>{/* <MainBgShadow width={"25%"} /> */}</Background>
         <NavItemWrapper>
           <NavItem target={"/"} title={"me"}>
             {currentRoute === "/" ? <NavItemMeActive /> : <NavItemMe />}
@@ -61,15 +72,21 @@ const Layout = ({ children }) => {
         <Main>{children}</Main>
       </LayoutBackground>
       <BackgroundProp>
-        <GrassStyle>
-          <GrassProp />
-        </GrassStyle>
-        <GrassStyle02>
+        <PropTwitterBoard>
+          <TwitterBoard />
+        </PropTwitterBoard>
+        <PropStyle>
+          <CornerProp />
+        </PropStyle>
+        <PropInsBoard>
+          <InsBoard />
+        </PropInsBoard>
+        {/* <GrassStyle02>
           <GrassProp02 />
-        </GrassStyle02>
+        </GrassStyle02> */}
         {/* <div></div> */}
       </BackgroundProp>
-      <Footer>By Bethany Yao 2022</Footer>
+      <Footer>© 2022 Bethany Yao </Footer>
     </LayoutContainer>
   );
 };

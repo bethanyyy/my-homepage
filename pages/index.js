@@ -34,21 +34,19 @@ export default function Home() {
             <BunnyModel />
           </Suspense>
         </Canvas>
+        {/* <p>Test Text</p> */}
       </ThumbnailSection>
       <IntroductionSection
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0, transition: { delay: 0.3 } }}
       >
         <Heading>
-          Hi! I&apos;m{" "}
-          <EmphasizedText fontSize="heading1" color="#f288cd">
-            Bethany Yao
-          </EmphasizedText>
-          , I make{" "}
-          <EmphasizedText fontSize="heading2" color="normal">
-            websites
-          </EmphasizedText>
-          , and <a href="https://bebeeee.itch.io/">games</a> sometimes
+          Hello! I&apos;m Bethany , I make{" "}
+          <EmphasizedText color="#E48BBA">websites</EmphasizedText>,{" "}
+          <div>
+            and other interactive stuff like{" "}
+            <a href="https://bebeeee.itch.io/">games</a>
+          </div>
         </Heading>
 
         <p className="">

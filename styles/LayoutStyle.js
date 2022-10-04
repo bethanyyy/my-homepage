@@ -19,43 +19,56 @@ export const LayoutContainer = styled.div`
 
 export const Header = styled.div`
   position: fixed;
-  top: var(--size-400);
-  left: var(--size-400);
+  /* top: var(--size-400); */
+  top: -2rem;
+  left: var(--size-500);
   /* background-color: var(--clr-neutral-100); */
-  width: 50px;
-  height: 50px;
-  border: 0.5rem solid;
-  border-image: url("/MainBgBorder.svg") 19%;
-  border-radius: 0.9rem;
+  width: 7rem;
+  height: 5rem;
+  border: 1rem solid;
+  border-image: url("/ButtonTest1.svg") 20%;
+  border-radius: 1rem;
   background-color: var(--clr-neutral-400);
   /* border-radius: 100%; */
   /* border: solid 0.2rem; */
   /* border-color: var(--clr-neutral-400); */
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
+  padding-bottom: 0.3rem;
   cursor: pointer;
+  filter: drop-shadow(0px var(--size-300) var(--clr-shadow));
 
   @media only screen and (min-width: 1536px) {
-    width: 60px;
-    height: 60px;
+    width: 9rem;
+    height: 5.2rem;
   }
 
-  a {
+  /* a {
     position: absolute;
     width: 35px;
     height: 30px;
     color: white;
-    /* background-color: var(--clr-neutral-100);
-    border-radius: 0.8rem; */
+    
 
     @media only screen and (min-width: 1536px) {
       width: 40px;
       height: 30px;
     }
+  } */
+
+  /* new logo */
+  a {
+    /* position: absolute;
+    width: 35px;
+    height: 30px; */
+    /* padding: 0.4rem; */
+    color: var(--clr-body);
+    /* background-color: var(--clr-neutral-100);
+    border-radius: 0 0 0.8rem 0.8rem; */
   }
 
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     :hover {
       width: 70px;
       height: 70px;
@@ -64,6 +77,18 @@ export const Header = styled.div`
         width: 45px;
         height: 30px;
       }
+    }
+  } */
+
+  /* new logo */
+  @media (min-width: 768px) {
+    :hover {
+      transform: translateY(0.75rem);
+
+      /* a {
+        width: 45px;
+        height: 30px;
+      } */
     }
   }
 `;
@@ -76,9 +101,10 @@ export const LayoutBackground = styled.div`
   width: 100%;
   height: 75vh;
   border: 1.1rem solid;
-  border-image: url("/MainBgBorder.svg") 24%;
+  /* border-image: url("/MainBgBorder.svg") 24%; */
+  border-color: transparent;
   border-radius: 2rem;
-  background-color: var(--clr-neutral-400);
+  /* background-color: var(--clr-neutral-400); */
 
   @media (min-width: 768px) {
     width: 75%;
@@ -91,6 +117,29 @@ export const LayoutBackground = styled.div`
   @media (min-width: 1536px) {
     height: calc(0.37 * var(--max-width-xl));
   }
+
+  ::after {
+    position: absolute;
+    top: 1rem;
+  }
+`;
+
+export const Background = styled.div`
+  position: absolute;
+  top: -1.1rem;
+  left: -1.1rem;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: calc(100% + 2.2rem);
+  height: calc(100% + 2.2rem);
+
+  border: 1.1rem solid;
+  border-image: url("/MainBgBorder.svg") 24%;
+  border-radius: 2rem;
+  background-color: var(--clr-neutral-400);
+
+  filter: drop-shadow(0px var(--size-700) var(--clr-shadow));
 `;
 
 export const NavItemWrapper = styled.ul`
@@ -103,7 +152,7 @@ export const NavItemWrapper = styled.ul`
   align-items: flex-start;
   justify-content: space-around;
   padding: 0;
-  z-index: -1;
+  z-index: -2;
 
   @media (min-width: 768px) {
     position: absolute;
@@ -121,6 +170,8 @@ export const NavItemStyle = styled.li`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+
+  filter: drop-shadow(0px var(--size-300) var(--clr-shadow));
 
   background-image: url("/ButtonTest1.svg");
   background-repeat: no-repeat;
@@ -168,7 +219,7 @@ export const NavItemTitle = styled.div`
 
 export const Main = styled.main`
   display: flex;
-  padding: var(--size-700) var(--size-600);
+  padding: var(--size-600) var(--size-500);
   height: 100%;
   background-color: var(--clr-neutral-100);
   border-radius: 1rem;
@@ -180,6 +231,10 @@ export const Main = styled.main`
   ::-webkit-scrollbar {
     display: none;
   }
+
+  @media (min-width: 412px) {
+    padding: var(--size-700) var(--size-600);
+  }
 `;
 
 export const BackgroundProp = styled.div`
@@ -188,6 +243,25 @@ export const BackgroundProp = styled.div`
   right: 0rem;
   width: 100%;
   height: 1rem;
+
+  filter: drop-shadow(0px var(--size-300) var(--clr-shadow));
+`;
+
+export const PropStyle = styled.div`
+  position: absolute;
+  bottom: 0rem;
+  right: 1rem;
+`;
+
+export const PropInsBoard = styled(PropStyle)`
+  position: absolute;
+  bottom: 8.5rem;
+  right: 3rem;
+`;
+export const PropTwitterBoard = styled(PropStyle)`
+  position: absolute;
+  bottom: 5.1rem;
+  right: 6.7rem;
 `;
 
 export const GrassStyle = styled.div`
@@ -203,8 +277,12 @@ export const GrassStyle02 = styled(GrassStyle)`
 `;
 
 export const Footer = styled.footer`
-  text-align: center;
-  font-size: var(--fs-100);
+  position: fixed;
+  bottom: 0rem;
+  right: 5rem;
+
+  /* text-align: center; */
+  font-size: var(--fs-300);
   color: var(--clr-neutral-100);
-  margin-top: var(--size-400);
+  /* margin-top: var(--size-400); */
 `;

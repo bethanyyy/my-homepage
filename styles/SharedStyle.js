@@ -15,7 +15,7 @@ export const EmphasizedText = styled.span`
     } else if (props.color === "normal") {
       return props.theme.colors.normal;
     }
-    return props.color || "inherit";
+    return props.color || "var(--clr-body)";
   }};
   text-shadow: 3px 2px 0px ${({ theme }) => theme.colors.mainBg},
     4px 4px 0px
