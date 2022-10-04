@@ -5,11 +5,14 @@ import {
   UnderlineSecond,
 } from "../styles/ContactMessageStyle";
 
-const Success = () => {
+const Error = () => {
   return (
     <MessageContainer>
       <div>
-        <p>Thank you for leaving a message!</p>
+        <p>
+          Sorry, an error occurred when sending the message, please try again
+          later or send me an email at bethany_yao@outlook.com!
+        </p>
         <Underline />
         <UnderlineSecond />
       </div>
@@ -17,4 +20,4 @@ const Success = () => {
   );
 };
 
-export default Success;
+export default Error;

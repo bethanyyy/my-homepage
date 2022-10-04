@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
-export const SuccessContainer = styled.div`
-  width: 100%;
+export const MessageContainer = styled.div`
+  max-width: 50%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,6 +10,7 @@ export const SuccessContainer = styled.div`
   padding-bottom: 1.4rem;
 
   p {
+    text-align: center;
     margin-bottom: 0.2rem;
   }
 `;

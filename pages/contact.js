@@ -1,4 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
+import { useRouter } from "next/router";
+import emailjs from "@emailjs/browser";
+
 import { ContactContainer, Form, LetterImage } from "../styles/ContactStyle";
 import { EmphasizedText } from "../styles/SharedStyle";
 import { pageTransition } from "../lib/animation";
@@ -6,6 +9,31 @@ import { pageTransition } from "../lib/animation";
 import Letter from "../public/Letter.svg";
 
 const Contact = () => {
+  const form = useRef();
+  const router = useRouter();
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_nax7h48",
+        "template_0f2mcii",
+        form.current,
+        "KNNsZFWHGS47BvjxZ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          router.push("/success");
+        },
+        (error) => {
+          console.log(error.text);
+          router.push("/error");
+        }
+      );
+  };
+
   return (
     <ContactContainer
       variants={pageTransition}
@@ -13,8 +41,9 @@ const Contact = () => {
       animate="animate"
       exit="exit"
     >
-      <Form name="contact" method="post" data-netlify="true" action="/success/">
+      <Form ref={form} name="contact" method="post" onSubmit={handleFormSubmit}>
         <input type="hidden" name="form-name" value="contact" />
+
         <p>
           <label htmlFor="name">Name</label>
           <input type="text" name="name" />
@@ -27,6 +56,7 @@ const Contact = () => {
           <label htmlFor="message">Message</label>
           <textarea name="message" />
         </p>
+
         <p>
           <button type="submit">
             <span>Submit</span>
