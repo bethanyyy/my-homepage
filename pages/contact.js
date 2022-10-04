@@ -46,11 +46,11 @@ const Contact = () => {
 
         <p>
           <label htmlFor="name">Name</label>
-          <input type="text" name="name" />
+          <input type="text" name="user_name" />
         </p>
         <p>
           <label htmlFor="email">Email</label>
-          <input type="email" name="email" />
+          <input type="email" name="user_email" />
         </p>
         <p>
           <label htmlFor="message">Message</label>
