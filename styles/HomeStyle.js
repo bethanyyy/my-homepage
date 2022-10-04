@@ -54,7 +54,7 @@ export const IntroductionSection = styled(motion.div)`
   min-height: 0;
 `;
 
-export const Heading = styled.div`
+export const Heading = styled.p`
   display: inline-block;
   font-family: var(--ff-accent);
   margin-bottom: var(--size-300);
@@ -81,7 +81,7 @@ export const Heading = styled.div`
     margin-inline-end: -1rem;
   }
 
-  div {
+  span:last-of-type {
     display: inline;
     @media (min-width: 768px) {
       display: block;
@@ -100,7 +100,7 @@ export const Heading = styled.div`
       right: 0;
       width: 100%;
       height: 3px;
-      background-color: black;
+      background-color: var(--clr-body);
       z-index: -1;
       transition: width 0.5s;
     }

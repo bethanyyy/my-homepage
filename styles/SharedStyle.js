@@ -29,6 +29,6 @@ export const EmphasizedText = styled.span`
         } else if (props.color === "normal") {
           return props.theme.colors.normal;
         }
-        return props.shadowColor || props.color || props.theme.colors.normal;
+        return props.shadowColor || props.color || "var(--clr-body)";
       }};
 `;

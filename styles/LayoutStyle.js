@@ -207,7 +207,7 @@ export const NavItemTitle = styled.div`
   top: -2rem;
   right: 0;
   width: 5rem;
-  color: white;
+  color: var(--clr-neutral-100);
   text-align: end;
 
   @media (min-width: 768px) {

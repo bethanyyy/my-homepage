@@ -43,10 +43,10 @@ export default function Home() {
         <Heading>
           Hello! I&apos;m Bethany , I make{" "}
           <EmphasizedText color="#E48BBA">websites</EmphasizedText>,{" "}
-          <div>
+          <span>
             and other interactive stuff like{" "}
             <a href="https://bebeeee.itch.io/">games</a>
-          </div>
+          </span>
         </Heading>
 
         <p className="">
