@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { Suspense } from "react";
-import { Canvas, useThree } from "@react-three/fiber";
-import { OrbitControls, Center } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
 
 import BunnyModel from "../components/BunnyModel";
 import {
@@ -34,14 +33,13 @@ export default function Home() {
             <BunnyModel />
           </Suspense>
         </Canvas>
-        {/* <p>Test Text</p> */}
       </ThumbnailSection>
       <IntroductionSection
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0, transition: { delay: 0.3 } }}
       >
         <Heading>
-          Hello! I&apos;m Bethany , I make{" "}
+          Hello! I&apos;m bebemoka, I make{" "}
           <EmphasizedText color="#E48BBA">websites</EmphasizedText>,{" "}
           <span>
             and other interactive stuff like{" "}

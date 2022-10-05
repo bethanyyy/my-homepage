@@ -240,9 +240,10 @@ export const Main = styled.main`
 export const BackgroundProp = styled.div`
   position: fixed;
   bottom: 0rem;
-  right: 0rem;
+  right: 0.75rem;
   width: 100%;
   height: 1rem;
+  z-index: 10;
 
   filter: drop-shadow(0px var(--size-300) var(--clr-shadow));
 `;
@@ -250,18 +251,20 @@ export const BackgroundProp = styled.div`
 export const PropStyle = styled.div`
   position: absolute;
   bottom: 0rem;
-  right: 1rem;
+  right: 0rem;
 `;
 
 export const PropInsBoard = styled(PropStyle)`
   position: absolute;
   bottom: 8.5rem;
-  right: 3rem;
+  right: 2.2rem;
+  cursor: pointer;
 `;
 export const PropTwitterBoard = styled(PropStyle)`
   position: absolute;
   bottom: 5.1rem;
-  right: 6.7rem;
+  right: 6.2rem;
+  cursor: pointer;
 `;
 
 export const GrassStyle = styled.div`
@@ -285,4 +288,5 @@ export const Footer = styled.footer`
   font-size: var(--fs-300);
   color: var(--clr-neutral-100);
   /* margin-top: var(--size-400); */
+  z-index: 10;
 `;

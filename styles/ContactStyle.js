@@ -16,6 +16,70 @@ export const ContactContainer = styled(motion.div)`
   }
 `;
 
+export const MessageModalContainer = styled(motion.div)`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 224, 161, 0.3);
+  border-radius: var(--size-400);
+  z-index: 1;
+
+  backdrop-filter: blur(0.75rem);
+`;
+
+export const MessageModal = styled(motion.div)`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 0.75rem solid;
+  border-image: url("/ButtonTest1.svg") 18%;
+  border-radius: 2rem;
+
+  min-width: 30rem;
+  padding: 2rem 6rem 3.4rem 6rem;
+  background-color: var(--clr-neutral-400);
+
+  p {
+    text-align: center;
+    margin-bottom: 0.2rem;
+  }
+
+  svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+`;
+
+export const Underline = styled.div`
+  position: relative;
+  :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0.2rem;
+    background-color: var(--clr-accent);
+  }
+`;
+
+export const UnderlineSecond = styled(Underline)`
+  :before {
+    top: 0.4rem;
+    background-color: #cdebef;
+  }
+`;
+
 export const Form = styled.form`
   display: flex;
   flex-direction: column;

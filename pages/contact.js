@@ -2,18 +2,32 @@ import React, { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/router";
 import emailjs from "@emailjs/browser";
 
-import { ContactContainer, Form, LetterImage } from "../styles/ContactStyle";
+import {
+  ContactContainer,
+  Form,
+  LetterImage,
+  MessageModal,
+  MessageModalContainer,
+  Underline,
+  UnderlineSecond,
+} from "../styles/ContactStyle";
 import { EmphasizedText } from "../styles/SharedStyle";
 import { pageTransition } from "../lib/animation";
 // import SubmitButton from "../public/SubmitButton.svg";
 import Letter from "../public/Letter.svg";
+import CrossSign from "../public/CrossSign.svg";
 
 const Contact = () => {
   const form = useRef();
   const router = useRouter();
+  const [showModal, setShowModal] = useState(false);
+  const [showCloseModal, setShowCloseModal] = useState(false);
+  const [message, setMessage] = useState("submitting...");
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    setMessage("submitting...");
+    setShowModal(true);
 
     emailjs
       .sendForm(
@@ -25,13 +39,16 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          router.push("/success");
+          setMessage("Thank you for leaving a message!");
         },
         (error) => {
           console.log(error.text);
-          router.push("/error");
+          setMessage("Error");
         }
-      );
+      )
+      .then((result) => {
+        setShowCloseModal(true);
+      });
   };
 
   return (
@@ -41,6 +58,25 @@ const Contact = () => {
       animate="animate"
       exit="exit"
     >
+      {showModal && (
+        <MessageModalContainer>
+          <MessageModal>
+            <div>
+              <p>{message}</p>
+              <Underline />
+              <UnderlineSecond />
+            </div>
+            {showCloseModal && (
+              <CrossSign
+                onClick={() => {
+                  setShowModal(false);
+                  setShowCloseModal(false);
+                }}
+              />
+            )}
+          </MessageModal>
+        </MessageModalContainer>
+      )}
       <Form ref={form} name="contact" method="post" onSubmit={handleFormSubmit}>
         <input type="hidden" name="form-name" value="contact" />
 

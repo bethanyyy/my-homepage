@@ -72,21 +72,25 @@ const Layout = ({ children }) => {
         <Main>{children}</Main>
       </LayoutBackground>
       <BackgroundProp>
-        <PropTwitterBoard>
-          <TwitterBoard />
-        </PropTwitterBoard>
         <PropStyle>
           <CornerProp />
         </PropStyle>
-        <PropInsBoard>
-          <InsBoard />
-        </PropInsBoard>
+        <Link href={"#"}>
+          <PropTwitterBoard>
+            <TwitterBoard />
+          </PropTwitterBoard>
+        </Link>
+        <Link href={"#"}>
+          <PropInsBoard>
+            <InsBoard />
+          </PropInsBoard>
+        </Link>
         {/* <GrassStyle02>
           <GrassProp02 />
         </GrassStyle02> */}
         {/* <div></div> */}
       </BackgroundProp>
-      <Footer>© 2022 Bethany Yao </Footer>
+      <Footer>© 2022 bebemoka. </Footer>
     </LayoutContainer>
   );
 };
