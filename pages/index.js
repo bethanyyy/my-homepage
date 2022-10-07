@@ -39,11 +39,11 @@ export default function Home() {
         animate={{ opacity: 1, x: 0, transition: { delay: 0.3 } }}
       >
         <Heading>
-          Hello! I&apos;m bebemoka, I make{" "}
+          Hello! I&apos;m baibai, I make{" "}
           <EmphasizedText color="#E48BBA">websites</EmphasizedText>,{" "}
           <span>
             and other interactive stuff like{" "}
-            <a href="https://bebeeee.itch.io/">games</a>
+            <a href="https://baibaiya.itch.io">games</a>
           </span>
         </Heading>
 

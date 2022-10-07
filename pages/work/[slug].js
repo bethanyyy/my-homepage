@@ -13,6 +13,7 @@ import {
   BackButtonShadow,
   BackButtonContainer,
   DescriptionDetails,
+  LiveSiteButton,
 } from "../../styles/WorkDetailsStyle";
 import { EmphasizedText } from "../../styles/SharedStyle";
 import { workDetailsTransition } from "../../lib/animation";
@@ -58,8 +59,16 @@ const WorkDetails = ({ workData }) => {
               harum voluptas explicabo, blanditiis officia possimus ducimus
               doloremque praesentium fugiat? Numquam.
             </p>
-            <Link href={"#"}>Live Site</Link>
+            <p>
+              <span>Stack:</span> Nextjs, Styled Comopnent, Framer Motion,
+              Threejs
+            </p>
           </DescriptionDetails>
+          <Link href={"#"}>
+            <LiveSiteButton>
+              Live Site <span>&#62;</span>
+            </LiveSiteButton>
+          </Link>
         </RightSection>
       </MainSection>
     </WorkDetailsContainer>

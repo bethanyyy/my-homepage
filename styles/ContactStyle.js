@@ -49,8 +49,30 @@ export const MessageModal = styled(motion.div)`
   background-color: var(--clr-neutral-400);
 
   p {
+    position: relative;
     text-align: center;
     margin-bottom: 0.2rem;
+
+    ${({ isSubmit }) =>
+      isSubmit &&
+      `
+      ::after {
+        content: "";
+        position: absolute;
+        background: var(--clr-neutral-400);
+        /* background: red; */
+        right: 0;
+        width: 0.5ch;
+        height: 100%;
+        animation: typing 1s steps(2) infinite;
+      }
+
+      @keyframes typing {
+        100% {
+          right: -1ch;
+        }
+      }
+    `}
   }
 
   svg {
@@ -88,15 +110,8 @@ export const Form = styled.form`
   flex-shrink: 0;
   width: 100%;
   height: 23rem;
-  /* padding-top: 10px; */
   padding-top: var(--size-300);
   overflow-y: auto;
-
-  /* background-color: ${({ theme }) => theme.colors.mainBg};
-  box-shadow: 5px 6px 0px #fdc388;
-  border: solid 4px;
-  border-color: #ffe0a1;
-  border-radius: 3px; */
 
   background-color: var(--clr-neutral-300);
   border: 1rem solid;
@@ -119,7 +134,6 @@ export const Form = styled.form`
   }
 
   p {
-    /* margin-bottom: 13px; */
     margin-block: var(--size-300);
   }
 
@@ -144,14 +158,14 @@ export const Form = styled.form`
 
   button {
     position: relative;
-    width: 4.2rem;
+    width: 4.3rem;
     height: 2.3rem;
     margin-left: 3px;
     padding: 0;
     border: none;
 
     background-color: var(--clr-neutral-300);
-    background-image: url("/SubmitButton_Dark2.svg");
+    background-image: url("/LiveSiteButton.svg");
     background-repeat: no-repeat;
     background-position: bottom;
 
@@ -161,7 +175,7 @@ export const Form = styled.form`
     cursor: pointer;
 
     :active {
-      background-image: url("/SubmitButton_Dark2_Pressed.svg");
+      background-image: url("/LiveSiteButton_Pressed.svg");
       span {
         display: block;
         padding-top: 10px;

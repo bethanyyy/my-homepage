@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
         <Header>
           <a>
             {/* <Image src={"/Logo_Anim.gif"} layout="fill" objectFit="contain" /> */}
-            bebemoka.
+            baibaiya.
           </a>
         </Header>
       </Link>
@@ -90,7 +90,7 @@ const Layout = ({ children }) => {
         </GrassStyle02> */}
         {/* <div></div> */}
       </BackgroundProp>
-      <Footer>© 2022 bebemoka. </Footer>
+      <Footer>© 2022 baibaiya. </Footer>
     </LayoutContainer>
   );
 };

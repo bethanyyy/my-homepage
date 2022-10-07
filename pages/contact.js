@@ -19,15 +19,16 @@ import CrossSign from "../public/CrossSign.svg";
 
 const Contact = () => {
   const form = useRef();
-  const router = useRouter();
   const [showModal, setShowModal] = useState(false);
   const [showCloseModal, setShowCloseModal] = useState(false);
-  const [message, setMessage] = useState("submitting...");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [message, setMessage] = useState("submitting....");
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    setMessage("submitting...");
+    setMessage("submitting....");
     setShowModal(true);
+    setIsSubmitting(true);
 
     emailjs
       .sendForm(
@@ -38,12 +39,16 @@ const Contact = () => {
       )
       .then(
         (result) => {
+          setIsSubmitting(false);
           console.log(result.text);
           setMessage("Thank you for leaving a message!");
         },
         (error) => {
+          setIsSubmitting(false);
           console.log(error.text);
-          setMessage("Error");
+          setMessage(
+            "Sorry, an error occurred when sending the message, please try again later or send me an email at bethany_yao@outlook.com!"
+          );
         }
       )
       .then((result) => {
@@ -60,7 +65,7 @@ const Contact = () => {
     >
       {showModal && (
         <MessageModalContainer>
-          <MessageModal>
+          <MessageModal isSubmit={isSubmitting}>
             <div>
               <p>{message}</p>
               <Underline />
