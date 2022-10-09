@@ -6,6 +6,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { useThree, useFrame } from "@react-three/fiber";
 import { AnimationMixer, LoopOnce } from "three";
+import { useSpring, animated } from "@react-spring/three";
 
 export default function Model(props) {
   const group = useRef();
@@ -21,10 +22,21 @@ export default function Model(props) {
   var passedTime = 0;
   var move = false;
 
+  // const [spring, api] = useSpring(
+  //   () => ({ scale: 0, config: { mass: 2, tension: 300 }, delay: 2000 }),
+  //   []
+  // );
+  const styles = useSpring({
+    from: { scale: 0 },
+    to: { scale: 1 },
+    delay: 500,
+    config: { mass: 1, tension: 200 },
+  });
+
   useEffect(() => {
+    // api.start({ scale: 1 });
     let timeout;
     const smoke = () => {
-      console.log("smoke");
       Object.entries(actions).map(([key, value]) => {
         value.reset();
         value.setLoop(LoopOnce);

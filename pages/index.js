@@ -11,8 +11,19 @@ import {
 } from "../styles/HomeStyle";
 import { EmphasizedText } from "../styles/SharedStyle";
 import { pageTransition } from "../lib/animation";
+import { useSpring, animated } from "@react-spring/three";
+import { useEffect } from "react";
 
 export default function Home() {
+  const [spring, api] = useSpring(
+    () => ({ scale: 0, config: { mass: 2, tension: 300 } }),
+    []
+  );
+
+  useEffect(() => {
+    api.start({ scale: 1 });
+  });
+
   return (
     <HomeWrapper
       variants={pageTransition}
@@ -32,10 +43,14 @@ export default function Home() {
           <Suspense fallback={null}>
             <BunnyModel />
           </Suspense>
-          <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -1.5, 0]}>
+          <animated.mesh
+            {...spring}
+            rotation={[-Math.PI / 2, 0, 0]}
+            position={[0, -1.5, 0]}
+          >
             <circleGeometry args={[2, 16, 0, 2 * Math.PI]} />
             <meshBasicMaterial color={0xe0c5a8} toneMapped={false} />
-          </mesh>
+          </animated.mesh>
           {/* <OrbitControls /> */}
         </Canvas>
       </ThumbnailSection>
