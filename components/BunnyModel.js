@@ -104,13 +104,13 @@ export default function Model(props) {
           geometry={nodes.Bunny_Scene.geometry}
           material={materials.palette}
           rotation={[Math.PI / 2, 0, 0]}
-          onPointerOver={(e) => setHover(true)}
-          onPointerLeave={(e) => {
-            setHover(false);
-            setReset(false);
-            move = false;
-            mesh.current.rotation.z = 0;
-          }}
+          // onPointerOver={(e) => setHover(true)}
+          // onPointerLeave={(e) => {
+          //   setHover(false);
+          //   setReset(false);
+          //   move = false;
+          //   mesh.current.rotation.z = 0;
+          // }}
         />
       </group>
     </group>

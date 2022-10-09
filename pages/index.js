@@ -13,6 +13,7 @@ import { EmphasizedText } from "../styles/SharedStyle";
 import { pageTransition } from "../lib/animation";
 import { useSpring, animated } from "@react-spring/three";
 import { useEffect } from "react";
+import { OrbitControls } from "@react-three/drei";
 
 export default function Home() {
   const [spring, api] = useSpring(
@@ -51,7 +52,11 @@ export default function Home() {
             <circleGeometry args={[2, 16, 0, 2 * Math.PI]} />
             <meshBasicMaterial color={0xe0c5a8} toneMapped={false} />
           </animated.mesh>
-          {/* <OrbitControls /> */}
+          <OrbitControls
+            enablePan={false}
+            minPolarAngle={Math.PI / 2.4}
+            maxPolarAngle={Math.PI / 2.4}
+          />
         </Canvas>
       </ThumbnailSection>
       <IntroductionSection
