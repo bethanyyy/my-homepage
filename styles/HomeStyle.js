@@ -8,33 +8,22 @@ export const HomeWrapper = styled(motion.div)`
   justify-content: start;
   min-width: 0;
 
-  /* @media (min-width: 1024px) {
-    flex-basis: 10%;
-  }*/
-
   @media (min-width: 768px) {
     align-items: center;
     justify-content: center;
     padding-inline: var(--size-700);
-    /* gap: var(--size-700); */
   }
 
   @media (min-width: 1190px) {
     flex-direction: row;
     gap: var(--size-400);
   }
-
-  @media (min-width: 1536px) {
-    /* padding-right: var(--size-600); */
-  }
 `;
 
 export const ThumbnailSection = styled.div`
-  /* height: 15rem; */
   flex-basis: 40%;
   min-width: 0;
   min-height: 0;
-  /* background-color: aliceblue; */
 
   @media (min-width: 768px) {
     flex-basis: 38%;
@@ -58,7 +47,6 @@ export const Heading = styled.p`
   display: inline-block;
   font-family: var(--ff-accent);
   margin-bottom: var(--size-300);
-  /* border-radius: 1rem; */
   line-height: 2rem;
 
   @media (min-width: 412px) {

@@ -19,19 +19,15 @@ export const LayoutContainer = styled.div`
 
 export const Header = styled.div`
   position: fixed;
-  /* top: var(--size-400); */
   top: -2rem;
   left: var(--size-500);
-  /* background-color: var(--clr-neutral-100); */
   width: 7rem;
   height: 5rem;
   border: 1rem solid;
   border-image: url("/ButtonTest1.svg") 20%;
   border-radius: 1rem;
   background-color: var(--clr-neutral-400);
-  /* border-radius: 100%; */
-  /* border: solid 0.2rem; */
-  /* border-color: var(--clr-neutral-400); */
+
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -44,51 +40,15 @@ export const Header = styled.div`
     height: 5.2rem;
   }
 
-  /* a {
-    position: absolute;
-    width: 35px;
-    height: 30px;
-    color: white;
-    
-
-    @media only screen and (min-width: 1536px) {
-      width: 40px;
-      height: 30px;
-    }
-  } */
-
   /* new logo */
   a {
-    /* position: absolute;
-    width: 35px;
-    height: 30px; */
-    /* padding: 0.4rem; */
     color: var(--clr-body);
-    /* background-color: var(--clr-neutral-100);
-    border-radius: 0 0 0.8rem 0.8rem; */
   }
-
-  /* @media (min-width: 768px) {
-    :hover {
-      width: 70px;
-      height: 70px;
-
-      a {
-        width: 45px;
-        height: 30px;
-      }
-    }
-  } */
 
   /* new logo */
   @media (min-width: 768px) {
     :hover {
       transform: translateY(0.75rem);
-
-      /* a {
-        width: 45px;
-        height: 30px;
-      } */
     }
   }
 `;
@@ -101,10 +61,8 @@ export const LayoutBackground = styled.div`
   width: 100%;
   height: 75vh;
   border: 1.1rem solid;
-  /* border-image: url("/MainBgBorder.svg") 24%; */
   border-color: transparent;
   border-radius: 2rem;
-  /* background-color: var(--clr-neutral-400); */
 
   @media (min-width: 768px) {
     width: 75%;
@@ -284,9 +242,7 @@ export const Footer = styled.footer`
   bottom: 0rem;
   right: 5rem;
 
-  /* text-align: center; */
   font-size: var(--fs-300);
   color: var(--clr-neutral-100);
-  /* margin-top: var(--size-400); */
   z-index: 10;
 `;

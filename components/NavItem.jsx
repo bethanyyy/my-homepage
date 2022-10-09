@@ -7,7 +7,6 @@ import {
   NavItemStyle,
   NavItemTitle,
 } from "../styles/LayoutStyle";
-import { useStateContext } from "../lib/context";
 
 const NavItem = ({ target, title, children }) => {
   const router = useRouter();

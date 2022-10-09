@@ -32,6 +32,11 @@ export default function Home() {
           <Suspense fallback={null}>
             <BunnyModel />
           </Suspense>
+          <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -1.5, 0]}>
+            <circleGeometry args={[2, 16, 0, 2 * Math.PI]} />
+            <meshBasicMaterial color={0xe0c5a8} toneMapped={false} />
+          </mesh>
+          {/* <OrbitControls /> */}
         </Canvas>
       </ThumbnailSection>
       <IntroductionSection

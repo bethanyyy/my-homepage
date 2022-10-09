@@ -56,15 +56,11 @@ export const MainSection = styled.div`
   }
 `;
 
-export const LeftSection = styled.div`
-  /* flex-basis: 50%; */
-`;
+export const LeftSection = styled.div``;
 
 export const RightSection = styled.div`
-  /* flex-basis: 50%; */
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
 `;
 
 export const Thumbnail = styled.div`
@@ -100,7 +96,6 @@ export const LiveSiteButton = styled.button`
   position: relative;
   width: 6rem;
   height: 2.5rem;
-  /* margin-left: 3px; */
   margin-top: auto;
   padding-bottom: 0.4rem;
   margin-left: var(--size-300);
@@ -121,7 +116,6 @@ export const LiveSiteButton = styled.button`
     span {
       display: inline-block;
       transform: translateX(0.2rem);
-      /* padding-left: 0.5rem; */
     }
   }
 `;

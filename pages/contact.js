@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
-import { useRouter } from "next/router";
+import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 import {
@@ -13,7 +12,6 @@ import {
 } from "../styles/ContactStyle";
 import { EmphasizedText } from "../styles/SharedStyle";
 import { pageTransition } from "../lib/animation";
-// import SubmitButton from "../public/SubmitButton.svg";
 import Letter from "../public/Letter.svg";
 import CrossSign from "../public/CrossSign.svg";
 

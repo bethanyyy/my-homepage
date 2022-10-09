@@ -13,11 +13,6 @@ export const ThumbnailWrapper = styled.div`
   position: relative;
   width: 100%;
   height: 130px;
-  /* transition: all 100ms ease-in-out;
-
-  :hover {
-    transform: scale(1.2);
-  } */
 
   @media only screen and (min-width: 1536px) {
     height: 160px;

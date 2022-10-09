@@ -44,9 +44,14 @@ export const MessageModal = styled(motion.div)`
   border-image: url("/ButtonTest1.svg") 18%;
   border-radius: 2rem;
 
-  min-width: 30rem;
-  padding: 2rem 6rem 3.4rem 6rem;
+  min-width: 20rem;
+  padding: 2rem 2rem 3.4rem 2rem;
   background-color: var(--clr-neutral-400);
+
+  @media (min-width: 768px) {
+    min-width: 30rem;
+    padding: 2rem 6rem 3.4rem 6rem;
+  }
 
   p {
     position: relative;

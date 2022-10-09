@@ -7,7 +7,10 @@ export const WorkContainer = styled(motion.div)`
 
 export const WorkGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* gap: 10px; */
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--size-300);
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
