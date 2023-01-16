@@ -1,12 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="90.27" height="42.026" viewBox="0 0 90.27 42.026">
+<svg xmlns="http://www.w3.org/2000/svg" width="98.026" height="42.026" viewBox="0 0 98.026 42.026">
   <g id="TwitterBoard" transform="translate(-203.078 -92)">
     <g id="PixelWoodBoard" transform="translate(-1033 -517)">
       <path id="Path_130" data-name="Path 130" d="M89.682,7.906V3.88H7.76V7.906H89.682Z" transform="translate(1236.37 605.12)" fill="#8d5a0e"/>
-      <path id="Path_138" data-name="Path 138" d="M93.708,37.854V3.88H7.76V37.854H93.708Z" transform="translate(1232.344 609.146)" fill="#c6813b"/>
+      <path id="Path_138" data-name="Path 138" d="M97.734,37.854V3.88H7.76V37.854H97.734Z" transform="translate(1232.344 609.146)" fill="#c6813b"/>
       <path id="Path_135" data-name="Path 135" d="M89.682,7.906V3.88H7.76V7.906H89.682Z" transform="translate(1236.37 643.12)" fill="#8d5a0e"/>
       <path id="Path_131" data-name="Path 131" d="M10.816,17.811V4.85H6.79V30.772h4.026Z" transform="translate(1229.288 612.202)" fill="#8d5a0e"/>
+      <path id="Path_133" data-name="Path 133" d="M10.816,17.811V4.85H6.79V30.772h4.026Z" transform="translate(1323.288 612.202)" fill="#8d5a0e"/>
       <path id="Path_132" data-name="Path 132" d="M10.816,6.863V4.85H6.79V8.876h4.026Z" transform="translate(1233.314 608.176)" fill="#8d5a0e"/>
       <path id="Path_136" data-name="Path 136" d="M10.816,6.863V4.85H6.79V8.876h4.026Z" transform="translate(1233.314 638.124)" fill="#8d5a0e"/>
+      <path id="Path_134" data-name="Path 134" d="M10.816,6.863V4.85H6.79V8.876h4.026Z" transform="translate(1319.262 608.176)" fill="#8d5a0e"/>
+      <path id="Path_137" data-name="Path 137" d="M10.816,6.863V4.85H6.79V8.876h4.026Z" transform="translate(1319.262 638.124)" fill="#8d5a0e"/>
     </g>
     <text id="Twitter" transform="translate(232.348 104)" fill="#fdeef5" font-size="16" font-family="BitbybitRegular, Bitbybit"><tspan x="0" y="14">Twitter</tspan></text>
     <path id="Icon_simple-twitter" data-name="Icon simple-twitter" d="M18.478,5.161a7.714,7.714,0,0,1-2.179.6,3.825,3.825,0,0,0,1.669-2.1,7.84,7.84,0,0,1-2.412.913A3.794,3.794,0,0,0,8.99,7.162a3.884,3.884,0,0,0,.1.867A10.749,10.749,0,0,1,1.265,4.075,3.72,3.72,0,0,0,.751,5.984a3.8,3.8,0,0,0,1.688,3.16A3.783,3.783,0,0,1,.72,8.668v.047a3.8,3.8,0,0,0,3.044,3.724,3.83,3.83,0,0,1-1.706.066A3.808,3.808,0,0,0,5.61,15.141,7.612,7.612,0,0,1,.9,16.764a8.056,8.056,0,0,1-.9-.052,10.8,10.8,0,0,0,5.829,1.7,10.72,10.72,0,0,0,10.8-10.789c0-.161,0-.324-.012-.486a7.665,7.665,0,0,0,1.9-1.966l-.036-.015Z" transform="translate(210.834 102.12)" fill="#fdeef5" stroke="#e48bba" stroke-width="1"/>

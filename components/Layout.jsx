@@ -63,15 +63,15 @@ const Layout = ({ children }) => {
         <PropStyle>
           <CornerProp />
         </PropStyle>
-        <Link href={"https://twitter.com/baibaiya__"}>
-          <PropTwitterBoard>
-            <TwitterBoard />
-          </PropTwitterBoard>
-        </Link>
         <Link href={"https://www.instagram.com/baibaiya__/"}>
           <PropInsBoard>
             <InsBoard />
           </PropInsBoard>
+        </Link>
+        <Link href={"https://twitter.com/baibaiya__"}>
+          <PropTwitterBoard>
+            <TwitterBoard />
+          </PropTwitterBoard>
         </Link>
       </BackgroundProp>
       <Footer>© 2022 baibaiya. </Footer>

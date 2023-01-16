@@ -212,13 +212,13 @@ export const PropStyle = styled.div`
   right: 0rem;
 `;
 
-export const PropInsBoard = styled(PropStyle)`
+export const PropTwitterBoard = styled(PropStyle)`
   position: absolute;
   bottom: 8.5rem;
   right: 2.2rem;
   cursor: pointer;
 `;
-export const PropTwitterBoard = styled(PropStyle)`
+export const PropInsBoard = styled(PropStyle)`
   position: absolute;
   bottom: 5.1rem;
   right: 6.2rem;
