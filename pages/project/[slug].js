@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
@@ -20,6 +20,56 @@ import { EmphasizedText } from "../../styles/SharedStyle";
 import { workDetailsTransition } from "../../lib/animation";
 
 import BackButton from "../../public/BackButton2.svg";
+
+const PrevIcon = styled.div`
+  position: absolute;
+  top: 100%;
+  left: calc(50%);
+  transform: translateX(-130%) translateY(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  border: solid 2px var(--clr-neutral-900);
+  background-color: var(--clr-neutral-100);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2px;
+  padding-bottom: 2px;
+  color: var(--clr-neutral-900);
+  font-weight: bold;
+
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+`;
+
+const NextIcon = styled.div`
+  position: absolute;
+  top: 100%;
+  right: calc(50%);
+  transform: translateX(130%) translateY(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  border: solid 2px var(--clr-neutral-900);
+  background-color: var(--clr-neutral-100);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2px;
+  padding-bottom: 2px;
+  color: var(--clr-neutral-900);
+  font-weight: bold;
+
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+`;
 
 const GalleryGrid = styled.div`
   display: flex;
@@ -64,6 +114,13 @@ const WorkDetails = ({ workData }) => {
     link,
     thumbnail_static,
   } = workData;
+
+  const [[imageIdx, direction], setImageIdx] = useState([0, 0]);
+  const paginate = (newDirection) => {
+    const nxtIdx = (imageIdx + newDirection + gallery.length) % gallery.length;
+    setImageIdx([nxtIdx, newDirection]);
+  };
+
   return (
     <WorkDetailsContainer
       variants={workDetailsTransition}
@@ -86,11 +143,31 @@ const WorkDetails = ({ workData }) => {
           </h2>
           <Thumbnail>
             <Image
-              src={thumbnail_static}
+              src={gallery ? gallery[imageIdx] : thumbnail_static}
               alt="calculator"
               layout="fill"
               objectFit="cover"
             />
+            {gallery && (
+              <PrevIcon
+                onClick={(e) => {
+                  e.stopPropagation();
+                  paginate(-1);
+                }}
+              >
+                &#60;
+              </PrevIcon>
+            )}
+            {gallery && (
+              <NextIcon
+                onClick={(e) => {
+                  e.stopPropagation();
+                  paginate(1);
+                }}
+              >
+                &#62;
+              </NextIcon>
+            )}
           </Thumbnail>
         </LeftSection>
         <RightSection>
@@ -108,7 +185,7 @@ const WorkDetails = ({ workData }) => {
               </p>
             )}
 
-            <GalleryGrid>
+            {/* <GalleryGrid>
               {gallery &&
                 gallery.map((image, i) => {
                   return (
@@ -124,7 +201,7 @@ const WorkDetails = ({ workData }) => {
                     // </Card>
                   );
                 })}
-            </GalleryGrid>
+            </GalleryGrid> */}
           </DescriptionDetails>
           <Link href={link ? link : "#"}>
             <LiveSiteButton>
