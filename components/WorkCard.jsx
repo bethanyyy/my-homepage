@@ -11,7 +11,7 @@ const WorkCard = ({ workDetails }) => {
   const [hover, setHover] = useState(false);
 
   return (
-    <Link href={`work/${slug}`}>
+    <Link href={`project/${slug}`}>
       <Card
         onMouseOver={() => setHover(true)}
         onMouseLeave={() => setHover(false)}

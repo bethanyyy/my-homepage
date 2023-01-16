@@ -15,6 +15,6 @@ export const ThumbnailWrapper = styled.div`
   height: 130px;
 
   @media only screen and (min-width: 1536px) {
-    height: 160px;
+    height: 170px;
   }
 `;

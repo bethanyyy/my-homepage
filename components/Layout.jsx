@@ -42,8 +42,8 @@ const Layout = ({ children }) => {
           <NavItem target={"/"} title={"me"}>
             {currentRoute === "/" ? <NavItemMeActive /> : <NavItemMe />}
           </NavItem>
-          <NavItem target={"/work"} title={"work"}>
-            {currentRoute.startsWith("/work") ? (
+          <NavItem target={"/project"} title={"project"}>
+            {currentRoute.startsWith("/project") ? (
               <NavItemWorkActive />
             ) : (
               <NavItemWork />
@@ -63,12 +63,12 @@ const Layout = ({ children }) => {
         <PropStyle>
           <CornerProp />
         </PropStyle>
-        <Link href={"#"}>
+        <Link href={"https://twitter.com/baibaiya__"}>
           <PropTwitterBoard>
             <TwitterBoard />
           </PropTwitterBoard>
         </Link>
-        <Link href={"#"}>
+        <Link href={"https://www.instagram.com/baibaiya__/"}>
           <PropInsBoard>
             <InsBoard />
           </PropInsBoard>

@@ -32,6 +32,21 @@ export const ThumbnailSection = styled.div`
     height: 16rem;
   }
 
+  @media (min-width: 1024px) {
+    div {
+      overflow: visible !important;
+    }
+    /* :hover {
+      position: relative !important;
+      > div {
+        position: absolute !important;
+        width: 130% !important;
+        height: 130% !important;
+        overflow: visible !important;
+      }
+    } */
+  }
+
   @media (min-width: 1536px) {
     flex-basis: 38%;
     height: 20rem;
@@ -69,7 +84,7 @@ export const Heading = styled.p`
     margin-inline-end: -1rem;
   }
 
-  span:last-of-type {
+  > span:last-of-type {
     display: inline;
     @media (min-width: 768px) {
       display: block;

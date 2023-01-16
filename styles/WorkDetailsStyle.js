@@ -56,7 +56,11 @@ export const MainSection = styled.div`
   }
 `;
 
-export const LeftSection = styled.div``;
+export const LeftSection = styled.div`
+  h2 {
+    padding-bottom: 1rem;
+  }
+`;
 
 export const RightSection = styled.div`
   display: flex;
@@ -67,6 +71,7 @@ export const Thumbnail = styled.div`
   position: relative;
   width: 100%;
   aspect-ratio: 16/9;
+
   border-radius: 8px;
   border: 4px solid;
   border-image: url("/BorderImage.svg") 9%;
@@ -85,6 +90,7 @@ export const Description = styled.div`
 
 export const DescriptionDetails = styled.div`
   padding-left: var(--size-300);
+  padding-bottom: var(--size-300);
   p {
     margin-top: 0;
     span {

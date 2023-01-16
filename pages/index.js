@@ -64,19 +64,25 @@ export default function Home() {
         animate={{ opacity: 1, x: 0, transition: { delay: 0.3 } }}
       >
         <Heading>
-          Hello! I&apos;m baibai, I make{" "}
+          Hello! I&apos;m baibai, I create interactive digital{" "}
+          <span>
+            experiences with{" "}
+            <EmphasizedText color="#E48BBA">websites</EmphasizedText> and{" "}
+            <a href="https://baibaiya.itch.io">games</a>
+          </span>
+          {/* Hello! I&apos;m baibai, I make{" "}
           <EmphasizedText color="#E48BBA">websites</EmphasizedText>,{" "}
           <span>
             and other interactive stuff like{" "}
             <a href="https://baibaiya.itch.io">games</a>
-          </span>
+          </span> */}
         </Heading>
 
         <p className="">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus,
-          voluptatibus in. Enim quisquam dignissimos perferendis non, expedita,
-          quam dolor explicabo sequi nihil commodi assumenda autem atque
-          pariatur, porro reprehenderit possimus?
+          With a background in Computer Science, and a long lasting interest in
+          music and art, I have been exploring ways to combine them that lead to
+          interesting and unique experiences. Currently, the areas that I am
+          most keen on are 3d animation, webgl and adaptive audio.
         </p>
       </IntroductionSection>
     </HomeWrapper>
