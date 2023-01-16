@@ -113,7 +113,7 @@ const WorkDetails = ({ workData }) => {
                 gallery.map((image, i) => {
                   return (
                     // <Card>
-                    <ImageWrapper>
+                    <ImageWrapper key={i}>
                       <Image
                         src={image.src}
                         alt={image.title}
