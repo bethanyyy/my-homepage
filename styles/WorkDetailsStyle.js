@@ -10,9 +10,9 @@ export const BackButtonContainer = styled.div`
 `;
 
 export const BackButtonStyle = styled.div`
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center; */
+  /* justify-content: center; */
   width: 2rem;
   aspect-ratio: 1/1;
   cursor: pointer;
