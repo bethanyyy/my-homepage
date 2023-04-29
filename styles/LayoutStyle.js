@@ -110,6 +110,7 @@ export const NavItemWrapper = styled.ul`
   align-items: flex-start;
   justify-content: space-around;
   padding: 0;
+  list-style-type: none;
   z-index: -2;
 
   @media (min-width: 768px) {

@@ -130,9 +130,9 @@ const WorkDetails = ({ workData }) => {
     >
       <BackButtonContainer>
         <BackButtonStyle>
-          <Link href={"/project"}>
-            <BackButton />
-          </Link>
+          {/* <Link href={"/project"}> */}
+          <BackButton />
+          {/* </Link> */}
         </BackButtonStyle>
         <BackButtonShadow></BackButtonShadow>
       </BackButtonContainer>
