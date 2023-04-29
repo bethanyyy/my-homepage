@@ -134,6 +134,8 @@ export const NavItemStyle = styled.li`
   background-image: url("/ButtonTest1.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-position-x: 50%;
+  background-position-y: 0%;
 
   opacity: 0.8;
 
