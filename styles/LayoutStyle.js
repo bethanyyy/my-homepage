@@ -131,9 +131,9 @@ export const NavItemStyle = styled.li`
 
   filter: drop-shadow(0px var(--size-300) var(--clr-shadow));
 
-  /* background-image: url("/ButtonTest1.svg");
+  background-image: url("/ButtonTest1.svg");
   background-repeat: no-repeat;
-  background-position: center; */
+  background-position: center;
   /* background-position-x: 50%;
   background-position-y: 0%; */
 
