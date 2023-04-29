@@ -125,9 +125,10 @@ export const NavItemWrapper = styled.ul`
 export const NavItemStyle = styled.li`
   width: 3rem;
   height: 3rem;
-  display: flex;
+  padding-top: 0.1rem;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   cursor: pointer;
 
   filter: drop-shadow(0px var(--size-300) var(--clr-shadow));
