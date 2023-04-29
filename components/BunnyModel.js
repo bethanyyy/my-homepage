@@ -61,8 +61,9 @@ export default function Model(props) {
     if (hover && passedTime % (Math.PI / 2) <= 0.01) {
       move = !move;
     }
-    mesh.current.rotation.z +=
-      Math.sin(passedTime * 4) * (hover ? 0.005 : 0) * move;
+    group.current.rotation.y +=
+      // Math.sin(passedTime * 4) * (hover ? 0.005 : 0) * move;
+      hover ? -0.005 : 0;
   });
 
   return (
@@ -104,13 +105,13 @@ export default function Model(props) {
           geometry={nodes.Bunny_Scene.geometry}
           material={materials.palette}
           rotation={[Math.PI / 2, 0, 0]}
-          // onPointerOver={(e) => setHover(true)}
-          // onPointerLeave={(e) => {
-          //   setHover(false);
-          //   setReset(false);
-          //   move = false;
-          //   mesh.current.rotation.z = 0;
-          // }}
+          onPointerOver={(e) => setHover(true)}
+          onPointerLeave={(e) => {
+            setHover(false);
+            setReset(false);
+            move = false;
+            mesh.current.rotation.z = 0;
+          }}
         />
       </group>
     </group>

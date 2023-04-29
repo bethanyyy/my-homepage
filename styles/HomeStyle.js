@@ -56,6 +56,7 @@ export const ThumbnailSection = styled.div`
 export const IntroductionSection = styled(motion.div)`
   flex: 1;
   min-height: 0;
+  /* max-width: 55ch; */
 `;
 
 export const Heading = styled.p`
