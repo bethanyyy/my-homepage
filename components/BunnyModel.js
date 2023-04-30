@@ -22,6 +22,11 @@ export default function Model(props) {
   var passedTime = 0;
   var move = false;
 
+  const [spring, api] = useSpring(
+    () => ({ scale: 0, config: { mass: 2, tension: 300 } }),
+    []
+  );
+
   // const [spring, api] = useSpring(
   //   () => ({ scale: 0, config: { mass: 2, tension: 300 }, delay: 2000 }),
   //   []
@@ -35,6 +40,13 @@ export default function Model(props) {
 
   useEffect(() => {
     // api.start({ scale: 1 });
+
+    // if (window.matchMedia("(max-width: 412px)").matches) {
+    //   group.group.scale.set(0.1, 0.1, 0.1);
+    // }
+
+    api.start({ scale: 1 });
+
     let timeout;
     const smoke = () => {
       Object.entries(actions).map(([key, value]) => {
@@ -68,7 +80,19 @@ export default function Model(props) {
 
   return (
     <group ref={group} {...props} dispose={null}>
-      <group name="Scene" position={[0, -1.5, 1]} scale={viewport.width / 6}>
+      <group
+        name="Scene"
+        position={
+          window.matchMedia("(max-width: 412px)").matches
+            ? [0, -1, 1]
+            : [0, -1.5, 1]
+        }
+        scale={
+          window.matchMedia("(max-width: 412px)").matches
+            ? 0.7
+            : viewport.width / 6
+        }
+      >
         <mesh
           ref={sphere}
           name="Icosphere"
@@ -114,6 +138,18 @@ export default function Model(props) {
           }}
         />
       </group>
+      <animated.mesh
+        {...spring}
+        rotation={[-Math.PI / 2, 0, 0]}
+        position={
+          window.matchMedia("(max-width: 412px)").matches
+            ? [0, -1, 0]
+            : [0, -1.5, 0]
+        }
+      >
+        <circleGeometry args={[2, 16, 0, 2 * Math.PI]} />
+        <meshBasicMaterial color={0xe0c5a8} toneMapped={false} />
+      </animated.mesh>
     </group>
   );
 }

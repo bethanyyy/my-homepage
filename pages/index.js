@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Suspense } from "react";
+import { Suspense, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 
 import BunnyModel from "../components/BunnyModel";
@@ -16,6 +16,8 @@ import { useEffect } from "react";
 import { OrbitControls } from "@react-three/drei";
 
 export default function Home() {
+  const circleMesh = useRef(null);
+
   const [spring, api] = useSpring(
     () => ({ scale: 0, config: { mass: 2, tension: 300 } }),
     []
@@ -23,6 +25,7 @@ export default function Home() {
 
   useEffect(() => {
     api.start({ scale: 1 });
+    console.log(circleMesh.current);
   });
 
   return (
@@ -44,14 +47,7 @@ export default function Home() {
           <Suspense fallback={null}>
             <BunnyModel />
           </Suspense>
-          <animated.mesh
-            {...spring}
-            rotation={[-Math.PI / 2, 0, 0]}
-            position={[0, -1.5, 0]}
-          >
-            <circleGeometry args={[2, 16, 0, 2 * Math.PI]} />
-            <meshBasicMaterial color={0xe0c5a8} toneMapped={false} />
-          </animated.mesh>
+
           <OrbitControls
             enablePan={false}
             minPolarAngle={Math.PI / 2.4}
