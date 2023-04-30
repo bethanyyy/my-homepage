@@ -180,7 +180,6 @@ export const NavItemTitle = styled.div`
 `;
 
 export const Main = styled.main`
-  display: flex;
   padding: var(--size-600) var(--size-500);
   height: 100%;
   background-color: var(--clr-neutral-100);
@@ -196,6 +195,7 @@ export const Main = styled.main`
 
   @media (min-width: 412px) {
     padding: var(--size-700) var(--size-600);
+    display: flex;
   }
 `;
 
