@@ -144,9 +144,10 @@ const WorkDetails = ({ workData }) => {
           <Thumbnail>
             <Image
               src={gallery ? gallery[imageIdx] : thumbnail_static}
-              alt="calculator"
+              alt={title}
               layout="fill"
               objectFit="cover"
+              style={{ borderRadius: `8px` }}
             />
             {gallery && (
               <PrevIcon

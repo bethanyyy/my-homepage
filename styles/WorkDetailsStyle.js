@@ -70,16 +70,17 @@ export const RightSection = styled.div`
 export const Thumbnail = styled.div`
   position: relative;
   width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16/10;
 
   border-radius: 8px;
-  border: 4px solid;
+  border: 6px solid;
   border-image: url("/BorderImage.svg") 9%;
   background-color: var(--clr-secondary);
 `;
 
 export const Description = styled.div`
   padding: 3px;
+  padding-left: var(--size-300);
   margin-bottom: var(--size-700);
   background-color: var(--clr-neutral-100);
   box-shadow: 5px 6px 0px var(--clr-secondary);
@@ -93,6 +94,8 @@ export const DescriptionDetails = styled.div`
   padding-bottom: var(--size-300);
   p {
     margin-top: 0;
+    /* margin-bottom: var(--size-300); */
+    white-space: pre-wrap;
     span {
     }
   }
