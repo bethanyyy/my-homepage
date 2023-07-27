@@ -8,6 +8,13 @@ export const HomeWrapper = styled(motion.div)`
   justify-content: start;
   min-width: 0;
 
+  flex: 1 1 auto;
+
+  /* ::after {
+    content: "";
+    height: var(--size-600);
+  } */
+
   @media (min-width: 768px) {
     align-items: center;
     justify-content: center;

@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
     <LayoutContainer>
       <Link href={"/"}>
         <Header>
-          <a>baibaiya.</a>
+          <a>bethany.</a>
         </Header>
       </Link>
       <LayoutBackground>
@@ -74,7 +74,7 @@ const Layout = ({ children }) => {
           </PropTwitterBoard>
         </Link>
       </BackgroundProp>
-      <Footer>© 2022 baibaiya. </Footer>
+      <Footer>© 2022 bethany. </Footer>
     </LayoutContainer>
   );
 };
