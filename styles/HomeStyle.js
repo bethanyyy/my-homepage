@@ -106,9 +106,9 @@ export const Heading = styled.p`
 
   > span:last-of-type {
     display: inline;
-    @media (min-width: 768px) {
+    /*@media (min-width: 768px) {
       display: block;
-    }
+    }*/
   }
 
   a {
