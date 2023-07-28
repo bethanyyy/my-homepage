@@ -191,4 +191,10 @@ export const Form = styled.form`
 
 export const LetterImage = styled.div`
   width: 8rem;
+
+  margin-bottom: var(--size-500);
+
+  @media (min-width: 412px) {
+    margin-bottom: var(--size-600);
+  }
 `;

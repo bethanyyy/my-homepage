@@ -68,12 +68,12 @@ export const IntroductionSection = styled(motion.div)`
   /* max-width: 55ch; */
 
   > *:last-child {
-    margin-bottom: var(--size-600);
+    margin-bottom: var(--size-500);
   }
 
   @media (min-width: 412px) {
     > *:last-child {
-      margin-bottom: var(--size-700);
+      margin-bottom: var(--size-600);
     }
   }
 `;

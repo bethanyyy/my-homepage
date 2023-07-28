@@ -180,7 +180,7 @@ export const NavItemTitle = styled.div`
 `;
 
 export const Main = styled.main`
-  padding: var(--size-600) var(--size-500) 0 var(--size-500);
+  padding: var(--size-500) var(--size-500) 0 var(--size-500);
   height: 100%;
   background-color: var(--clr-neutral-100);
   border-radius: 1rem;
@@ -198,7 +198,7 @@ export const Main = styled.main`
   }
 
   @media (min-width: 412px) {
-    padding: var(--size-700) var(--size-600) 0 var(--size-600);
+    padding: var(--size-600) var(--size-600) 0 var(--size-600);
     display: flex;
 
     /* > *:last-child {

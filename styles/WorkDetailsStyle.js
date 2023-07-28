@@ -50,7 +50,8 @@ export const MainSection = styled.div`
   justify-content: center;
   gap: var(--size-400);
 
-  margin-bottom: var(--size-600);
+  margin-top: var(--size-400);
+  margin-bottom: var(--size-500);
 
   @media (min-width: 1190px) {
     flex-direction: row;
@@ -60,13 +61,13 @@ export const MainSection = styled.div`
   }
 
   @media (min-width: 412px) {
-    margin-bottom: var(--size-700);
+    margin-bottom: var(--size-600);
   }
 `;
 
 export const LeftSection = styled.div`
   h2 {
-    padding-bottom: 1rem;
+    /* padding-bottom: var(--size-300); */
   }
 `;
 
