@@ -8,11 +8,13 @@ export const HomeWrapper = styled(motion.div)`
   justify-content: start;
   min-width: 0;
 
-  flex: 1 1 auto;
-
   /* ::after {
     content: "";
     height: var(--size-600);
+  } */
+
+  /* @media (min-width: 412px) {
+    margin-bottom: var(--size-700);
   } */
 
   @media (min-width: 768px) {
@@ -64,6 +66,16 @@ export const IntroductionSection = styled(motion.div)`
   flex: 1;
   min-height: 0;
   /* max-width: 55ch; */
+
+  > *:last-child {
+    margin-bottom: var(--size-600);
+  }
+
+  @media (min-width: 412px) {
+    > *:last-child {
+      margin-bottom: var(--size-700);
+    }
+  }
 `;
 
 export const Heading = styled.p`

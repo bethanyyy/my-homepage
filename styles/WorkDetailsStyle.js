@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-export const WorkDetailsContainer = styled(motion.div)``;
+export const WorkDetailsContainer = styled(motion.div)`
+  /* overflow: scroll; */
+`;
 
 export const BackButtonContainer = styled.div`
   position: relative;
@@ -48,11 +50,17 @@ export const MainSection = styled.div`
   justify-content: center;
   gap: var(--size-400);
 
+  margin-bottom: var(--size-600);
+
   @media (min-width: 1190px) {
     flex-direction: row;
     > * {
       flex-basis: 50%;
     }
+  }
+
+  @media (min-width: 412px) {
+    margin-bottom: var(--size-700);
   }
 `;
 
