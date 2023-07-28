@@ -189,6 +189,13 @@ export const Main = styled.main`
   scrollbar-width: none;
   -ms-overflow-style: none;
 
+  ::after {
+  content: "";
+  display: block;
+  height: 50px;
+  width: 100%;
+}
+
   /* > *:last-child {
     margin-bottom: var(--size-600);
   } */
