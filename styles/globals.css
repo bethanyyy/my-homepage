@@ -161,6 +161,7 @@ button {
   font-family: var(--ff-primary);
 }
 
+/* this media query reads color mode from browser and applies its CSS styles
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -169,4 +170,4 @@ button {
     color: white;
     background: black;
   }
-}
+}*/
