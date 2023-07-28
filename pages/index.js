@@ -60,7 +60,7 @@ export default function Home() {
         animate={{ opacity: 1, x: 0, transition: { delay: 0.3 } }}
       >
         <Heading>
-          Hello! I&apos;m Bethany, I create interactive digital{" "}
+          Hello! I&apos;m Bethany, I design and create interactive{" "}
           <span>
             experiences with{" "}
             <EmphasizedText color="#E48BBA">websites</EmphasizedText> and{" "}
