@@ -190,15 +190,11 @@ export const Main = styled.main`
   -ms-overflow-style: none;
 
   ::after {
-  content: "";
-  display: block;
-  height: 50px;
-  width: 100%;
-}
-
-  /* > *:last-child {
-    margin-bottom: var(--size-600);
-  } */
+    content: "";
+    display: block;
+    height: var(--size-500);
+    width: 100%;
+  }
 
   ::-webkit-scrollbar {
     display: none;
@@ -207,10 +203,11 @@ export const Main = styled.main`
   @media (min-width: 412px) {
     padding: var(--size-600) var(--size-600) 0 var(--size-600);
     display: flex;
+    flex-direction: column;
 
-    /* > *:last-child {
-      margin-bottom: var(--size-700);
-    } */
+    > *:last-child {
+      margin: auto;
+    }
   }
 `;
 
