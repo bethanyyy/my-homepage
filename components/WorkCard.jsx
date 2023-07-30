@@ -22,6 +22,7 @@ const WorkCard = ({ workDetails }) => {
             alt="calculator"
             layout="fill"
             objectFit="cover"
+            priority={true}
           />
         </ThumbnailWrapper>
       </Card>

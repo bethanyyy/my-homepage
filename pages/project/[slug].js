@@ -148,6 +148,7 @@ const WorkDetails = ({ workData }) => {
               layout="fill"
               objectFit="cover"
               style={{ borderRadius: `8px` }}
+              priority={true}
             />
             {gallery && (
               <PrevIcon

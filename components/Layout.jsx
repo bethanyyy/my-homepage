@@ -63,7 +63,7 @@ const Layout = ({ children }) => {
         <PropStyle>
           <CornerProp />
         </PropStyle>
-        <Link href={"https://www.instagram.com/baibaiya__/"}>
+        <Link href={"https://www.instagram.com/bananacat.owo/"}>
           <PropInsBoard>
             <InsBoard />
           </PropInsBoard>
