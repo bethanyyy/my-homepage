@@ -60,11 +60,11 @@ export default function Home() {
         animate={{ opacity: 1, x: 0, transition: { delay: 0.3 } }}
       >
         <Heading>
-          Hello! I&apos;m Bethany, I design and create interactive{" "}
+          Hi! I&apos;m Bethany, I design and create interactive{" "}
           <span>
             experiences with{" "}
             <EmphasizedText color="#E48BBA">websites</EmphasizedText> and{" "}
-            <a href="https://baibaiya.itch.io">games</a>
+            <a href="https://baibaiya.itch.io">games</a>.
           </span>
           {/* Hello! I&apos;m baibai, I make{" "}
           <EmphasizedText color="#E48BBA">websites</EmphasizedText>,{" "}
@@ -75,10 +75,10 @@ export default function Home() {
         </Heading>
 
         <p className="">
-          With a background in Computer Science, and a long lasting interest in
-          music and art, I have been exploring ways to combine them that lead to
-          interesting and unique experiences. Currently, the areas that I am
-          most keen on are 3d animation, webgl and adaptive audio.
+          With a background in coding and game design, plus a strong interest in
+          music and art, I have been keen on exploring ways to innovate on the
+          intersection of art and technology. I want to create experiences that
+          emotionally connect with people.
         </p>
       </IntroductionSection>
     </HomeWrapper>
