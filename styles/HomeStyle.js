@@ -112,13 +112,14 @@ export const Heading = styled.p`
   }
 
   a {
+    display: inline-block;
     position: relative;
     z-index: 2;
 
     :before {
       content: "";
       position: absolute;
-      bottom: -1px;
+      bottom: 3px;
       left: 0;
       right: 0;
       width: 100%;
@@ -131,7 +132,7 @@ export const Heading = styled.p`
     :after {
       content: "";
       position: absolute;
-      bottom: -1px;
+      bottom: 3px;
       left: 0;
       right: 0;
       width: 100%;
