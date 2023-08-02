@@ -75,10 +75,10 @@ export default function Home() {
         </Heading>
 
         <p className="">
-          With a background in coding and game design, plus a strong interest in
-          music and art, I have been keen on exploring ways to innovate on the
-          intersection of art and technology. I want to create experiences that
-          emotionally connect with people.
+          With a background in coding and game design, and a strong interest in
+          music and art, I have been keen on seeking innovative intersections of
+          art and technology. I wish to create experiences that emotionally
+          connect with people.
         </p>
       </IntroductionSection>
     </HomeWrapper>

@@ -106,6 +106,19 @@ export const DescriptionDetails = styled.div`
     /* margin-bottom: var(--size-300); */
     white-space: pre-wrap;
     span {
+      /* position: relative;
+      :before {
+        content: "";
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 3px;
+        background-color: var(--clr-body);
+        z-index: 1;
+        transition: width 0.5s;
+      } */
     }
   }
 `;
