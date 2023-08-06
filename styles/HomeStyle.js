@@ -166,3 +166,90 @@ export const ThumbnailWrapper = styled.div`
   border-color: #e8ab6e;
   overflow: hidden;
 `;
+
+export const CallToAction = styled.a`
+  position: relative;
+  width: 100%;
+  text-align: right;
+  display: block;
+
+  button {
+    cursor: pointer;
+
+    padding-bottom: 5px;
+    padding-inline: 8px;
+    background-color: transparent;
+    background-image: url("/LiveSiteButton.svg");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border: none;
+    color: var(--clr-neutral-100);
+    height: 2.5rem;
+  }
+
+  /* background-position: bottom; */
+
+  /* position: relative;
+  width: 10rem;
+  height: 5rem;
+  padding-bottom: 0.4rem;
+  border: none;
+
+  background-color: transparent;
+  background-image: url("/LiveSiteButton.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  color: var(--clr-neutral-100); */
+
+  /* display: inline-block;
+  z-index: 2;
+
+  :before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--clr-body);
+    z-index: -1;
+    transition: width 0.5s;
+  }
+
+  :after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(
+      to left,
+      var(--clr-accent-secondary),
+      var(--clr-accent)
+    );
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    transition: clip-path 0.5s;
+    z-index: -1;
+  }
+
+  :hover:before {
+    width: 0%;
+  }
+
+  :hover:after {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  } */
+
+  :hover {
+    span {
+      display: inline-block;
+      transform: translateX(0.2rem);
+    }
+  }
+`;

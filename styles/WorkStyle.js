@@ -13,11 +13,10 @@ export const WorkGrid = styled.div`
   ::after {
     content: "";
     grid-column: span 2;
-    /* background-color: aliceblue; */
     height: var(--size-300);
   }
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
   }
 `;

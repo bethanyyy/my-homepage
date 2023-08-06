@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { Suspense, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 
@@ -8,12 +9,15 @@ import {
   ThumbnailSection,
   Heading,
   IntroductionSection,
+  CallToAction,
 } from "../styles/HomeStyle";
 import { EmphasizedText } from "../styles/SharedStyle";
 import { pageTransition } from "../lib/animation";
 import { useSpring, animated } from "@react-spring/three";
 import { useEffect } from "react";
 import { OrbitControls } from "@react-three/drei";
+
+import { LiveSiteButton } from "../styles/WorkDetailsStyle";
 
 export default function Home() {
   const circleMesh = useRef(null);
@@ -80,6 +84,14 @@ export default function Home() {
           art and technology. I wish to create experiences that emotionally
           connect with people.
         </p>
+
+        {/* <Link href={"/project"}>
+          <CallToAction>
+            <button>
+              Projects <span>&#62;</span>
+            </button>
+          </CallToAction>
+        </Link> */}
       </IntroductionSection>
     </HomeWrapper>
   );
